@@ -1,0 +1,268 @@
+//intro section start
+#bookland_intro{
+    background: url(https://bookland.wprdx.com/demo/wp-content/themes/bookland//assets/images/background/waveelement2.png);
+    // background-color: lightgreen;
+    // height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .intro_left{
+        padding: 100px 0 20px;
+        h5{
+            letter-spacing: 20px;
+            color: #e5588d;
+            font-weight: 400;
+            // padding-top: 100px;
+        }
+        h1{
+            font-size: clamp(1.5rem, 0.9796rem + 2.7755vw, 3.2rem);
+           
+        }
+        .author_category{
+            a{
+                color: #192436;
+                font-size: 1.125rem;
+                margin-right: 20px;
+                font-weight: 300;
+            }
+        }
+
+        .quote{
+            border-left: 1px solid #3b2f4a;
+            padding-left: 30px;
+            margin: 30px 0;
+            p{
+                color:#192436;
+                max-width: 600px;
+            }
+        }
+
+        .price{
+            margin: 25px 0;
+            .discounted_price{
+                font-size: 2rem;
+                font-weight: 500;
+                color:#e5588d;
+            }
+
+            .original_price{
+                font-family: var(--font-family-title);
+                // font-weight: 400;
+                color: #5f5c9d;
+                font-size: 1.02rem;
+                padding: 0 10px;
+                text-decoration: line-through;
+            }
+
+            .discount{
+                font-size: 0.8rem;
+                font-weight: 500;
+                background-color: #ff1e6f;
+                border-radius: 6px;
+                color:#fff;
+                padding:2px 7px;
+            }
+            
+        }
+
+        .left_side_buttons{
+            .btn_buy{
+                @include button();
+               margin-right: 20px;
+            }
+            .btn_details{
+                @include button($text_color:#1a1668,$bg_color:#fff,$border_color:#1a1668,$hover-bg:#1a1668);
+                padding-right: 20px;
+            }
+        }
+
+        .left_side_partners{
+            // margin: 80px 0;
+            padding-top: 80px;
+            p{
+                color: $gray-color;
+                padding: 10px 0;
+            }
+            img{
+               padding-right: 10px;
+            }
+        }
+    }
+
+    .intro_right{
+        position: relative;
+        z-index: 1;
+        // &::after{
+        //     content: "";
+        //     width: 700px;
+        //     height: 700px;
+        //     border-radius: 50%;
+        //     background-color:$main-color;
+        //     position: absolute;
+        //     bottom : -90px;
+        //     left: 0;
+        //     z-index: -99;
+        //    }
+        img{
+            width: 100%;
+            height: auto;
+      
+        }
+       
+    }
+
+
+    @media screen and (max-width:992px) {
+        .intro_left{
+            padding: 20px 0;
+            h5{
+                padding-top: 20px;
+            }
+            .left_side_partners{
+               display: none;
+            }
+        }
+    }
+}
+//intro section end
+
+
+//best choice section start
+#best_choice{
+    padding: 80px 0;
+    .left_side{
+        .left_side_img{
+            img{
+                border-radius: $border-radius;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .experience_category{
+            max-width: 400px;
+            position: relative;
+            margin-left: -150px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            .experience{
+                background-color: $main-color;
+                border-radius: $border-radius;
+                color: #fff;
+                padding: 20px;
+                max-width: 170px;
+                span{
+                    font-size: 62px;
+                    font-weight: 700;
+                    
+                }
+                p{
+                    font-size: 20px;
+                }
+
+                
+            }
+        }
+     
+        .category{
+            padding: 20px;
+            i{
+                color: $main-color;
+                padding-right: 10px;
+                
+            }  
+        }
+
+    }
+
+    .right_side{
+        padding:0 30px;
+        p{
+            margin: 40px 0;
+        }
+        .right_side_btn{
+            @include button();
+        }
+    }
+
+    @media screen and (max-width:992px){
+       .right_side{
+            padding-top: 40px;
+       }
+    }
+    @media screen and (max-width:575px){
+    padding: 40px 0;
+
+        .left_side{
+            
+            .experience_category{
+                width: 100%;
+                display: block;
+                margin-left: 0;
+                .experience{    
+                  max-width: 100%;
+                    padding: 5px ;
+                    // width: 150px;
+                    span{
+                        font-size: 2rem;                        
+                    }
+                    p{
+                        font-size:1rem ;
+                    }
+                }
+                .category{
+                    display: none;
+                }
+                
+            }
+    
+        }
+        
+     
+        
+
+    }
+}
+//best choice section end
+
+
+// #companies section start
+#companies{
+    margin: 50px 0;
+    // padding: 50px 150px 30px;
+    .swiper{
+        .swiper-slide {
+            text-align: center;
+            // background-color: red;
+            
+          }
+      
+          .swiper-slide img {
+            max-width: 150px;
+            display: block;
+            object-fit: cover;
+            margin: 0 auto;
+            filter: grayscale(1);
+            opacity: .6;
+            transition: all .3s ease;
+            &:hover{
+                cursor: pointer;
+                filter: grayscale(0);
+                opacity: 1;
+            }
+          }
+    }
+}
+// #companies section end
+
+
+
+// counter section start
+#counter{
+    padding: 50px 0;
+    text-align: center;
+}
+// counter section end
+
