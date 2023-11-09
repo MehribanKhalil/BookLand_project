@@ -115,4 +115,61 @@
      transition: all 0.3s;
         }
   }
-  
+
+//   cards 
+
+.swiper-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    .book-card{
+        
+        .img-book{
+            img{
+                max-width: 100%;
+                border-radius: 6px;
+            }
+        }
+        .content-book{
+            text-align: center;
+            margin-top: 10px;
+            h4{
+                 line-height: 1.4;
+            font-weight: 600;
+            font-size: 1.25rem;
+            }
+           .price{
+            color: $main-color;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    del{
+        font-size: 16px;
+        font-weight: 400;
+        color: #666;
+        opacity: .9;    
+    }
+           }
+           .add-to-card{
+            font-size: 14px;
+    padding: 12.5px 20px;
+    line-height: 1.5;
+    display: inline-flex;
+    border-radius:6px;
+    font-weight: 500;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center;
+    transition: all .2s;
+    justify-content: center;
+    color: #fff;
+    background-color: #1a1668;
+    gap: 8px;
+    
+}
+           }
+
+        }
+    } 
