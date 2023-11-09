@@ -70,4 +70,294 @@ h5 {
 
 p {
   font-size: clamp(0.875rem, 0.8367rem + 0.2041vw, 1rem);
+}
+
+#footer-category {
+  background-color: #e5588d;
+  color: white;
+}
+#footer-category .category-toogle {
+  padding: 50px;
+}
+#footer-category .category-toogle .btn-footer-collapse {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+#footer-category .category-toogle .btn-footer-collapse::before {
+  content: "+";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+#footer-category .category-toogle .minusBtn::before {
+  content: "\f068";
+}
+#footer-category .category-toogle .category-accordion {
+  background-color: #e5588d;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.7s ease;
+}
+#footer-category .category-toogle .category-accordion.active {
+  max-height: 500px;
+  margin-top: 30px;
+  transition: all 0.9s ease;
+}
+#footer-category .category-toogle .category-accordion li {
+  padding-bottom: 15px;
+}
+#footer-category .category-toogle .category-accordion li a {
+  transition: all 0.7s;
+}
+#footer-category .category-toogle .category-accordion li a:hover {
+  color: black;
+  transition: all 0.7s;
+}
+
+#footer-top {
+  background-color: #192436;
+  padding: 70px 0px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#footer-top .booksore-icons {
+  padding-right: 44px;
+  padding-bottom: 25px;
+}
+#footer-top .booksore-icons .img-logo {
+  padding-bottom: 35px;
+}
+#footer-top .booksore-icons .img-logo img {
+  max-width: 220px;
+}
+#footer-top .booksore-icons .text {
+  margin-bottom: 35px;
+  line-height: 27px;
+}
+#footer-top .booksore-icons .social-media {
+  margin-top: 30px;
+}
+#footer-top .booksore-icons .social-media ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#footer-top .booksore-icons .social-media ul li i {
+  color: #e5588d;
+  background-color: rgba(229, 88, 141, 0.1);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 100%;
+  font-weight: 400;
+  padding-left: 11px;
+  transition: all 0.7s;
+}
+#footer-top .booksore-icons .social-media ul li i:hover {
+  transition: all 0.7s;
+  color: white;
+  background-color: #e5588d;
+}
+#footer-top .links {
+  padding-bottom: 25px;
+}
+#footer-top .links h5 {
+  color: white;
+  padding-bottom: 8px;
+}
+#footer-top .links li {
+  padding-bottom: 10px;
+}
+#footer-top .links li i {
+  cursor: pointer;
+  padding-right: 5px;
+  color: #e5588d;
+}
+#footer-top .links li a {
+  transition: all 0.7s;
+}
+#footer-top .links li a:hover {
+  transition: all 0.7s;
+  color: #e5588d;
+}
+#footer-top .contacts h5 {
+  color: white;
+  padding-bottom: 20px;
+}
+#footer-top .contacts ul li {
+  display: flex;
+  padding-bottom: 20px;
+}
+#footer-top .contacts ul li i {
+  font-size: 34px;
+  line-height: 1;
+  color: #e5588d;
+  padding-right: 20px;
+}
+#footer-top .contacts ul li p {
+  min-width: 170px;
+}
+
+@media screen and (max-width: 992px) {
+  #footer-top .booksore-icons {
+    text-align: center;
+  }
+  #footer-top .booksore-icons p {
+    max-width: 550px;
+  }
+  #footer-top .booksore-icons .social-media ul {
+    justify-content: center;
+  }
+  #footer-top .booksore-icons .social-media ul li i {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 460px) {
+  #footer-top .links {
+    font-size: 13px;
+  }
+  #footer-top .links h5 {
+    font-size: 14px;
+  }
+  #footer-top .links li {
+    min-width: 83px;
+  }
+}
+#footer-bottom {
+  background-color: #192436;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 28px 0;
+  color: #a9a9a9;
+  font-size: 15px;
+}
+#footer-bottom a {
+  color: #e5588d;
+}
+
+@media screen and (max-width: 992px) {
+  #footer-bottom p {
+    text-align: center;
+  }
+}
+#content-inner {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+#content-inner .card-inner {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#content-inner .card-inner .icon-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content-inner .card-inner .icon-center .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 31px;
+  border-radius: 6px;
+  background-color: rgba(229, 88, 141, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+}
+#content-inner .card-inner .icon-center .icon i {
+  font-size: 26px;
+  color: #e5588d;
+}
+#content-inner .card-inner h5 {
+  font-size: 20px;
+}
+#content-inner .card-inner:hover .icon {
+  background-color: #e5588d;
+  transition: all 0.9s;
+}
+#content-inner .card-inner:hover i {
+  animation: shake 0.5s;
+  color: white !important;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px) rotate(3deg);
+  }
+  40% {
+    transform: translateX(5px) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(-5px) rotate(3deg);
+  }
+  80% {
+    transform: translateX(5px) rotate(-3deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#our-mission {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(245, 245, 245);
+}
+#our-mission .section-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#our-mission .section-head p {
+  max-width: 753px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#our-mission .mission-card {
+  margin-bottom: 20px;
+}
+#our-mission .mission-card .content-mission {
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1.732px 60px 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 45px;
+  border-radius: 14px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  transition: all 0.8s ease 0s;
+}
+#our-mission .mission-card .content-mission .icon i {
+  color: rgb(26, 22, 104);
+  margin-bottom: 30px;
+  vertical-align: middle;
+  font-size: 60px;
+  transition: all 0.3s;
+}
+#our-mission .mission-card .content-mission .content-text {
+  overflow: hidden;
+}
+#our-mission .mission-card .content-mission .content-text h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+#our-mission .mission-card .content-mission .content-text p {
+  margin-bottom: 20px;
+}
+#our-mission .mission-card .content-mission .content-text a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e5588d;
+}
+#our-mission .content-mission:hover {
+  border: 2px solid #e5588d;
+  transform: translateY(-20px);
+}
+#our-mission .content-mission:hover i {
+  color: #e5588d !important;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */
