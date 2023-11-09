@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    color: #777;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+p{
+    margin: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+  background-color:#e5588d;
+  color: #fff;
+}
