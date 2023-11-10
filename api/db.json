@@ -1,0 +1,82 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "image": "https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/a7cbc9ec4f61f7713101612a45211ebb-450x600.jpg",
+      "title": "Terrible Madness",
+      "authors": "Shelley, Mary Wollstonecraft",
+      "review": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "price": 50,
+      "discount": 0,
+      "languages": ["en"],
+      "category": "Business, Strategy",
+      "rating": 2
+    },
+    {
+      "id": 2,
+      "image": "https://bookland.wprdx.com/demo/wp-content/uploads/2022/11/image_2022_11_07T12_54_40_525Z-450x600.png",
+      "title": "Rework",
+      "authors": "Shelley, Mary Wollstonecraft",
+      "review": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "price": 50,
+      "discount": 0,
+      "languages": ["en"],
+      "category": "Business, Strategy",
+      "rating": 6
+    },
+    {
+      "id": 3,
+      "image": "https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/44bf1374c4230e2655135b2a68fc7ccf-450x600.jpg",
+      "title": "Thunder Stunt",
+      "authors": "Shelley, Mary Wollstonecraft",
+      "review": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "price": 18,
+      "discount": 2,
+      "languages": ["en"],
+      "category": "Business, Strategy",
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "image": "https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png",
+      "title": "Think",
+      "authors": "Shelley, Mary Wollstonecraft",
+      "review": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "price": 25,
+      "discount": 15,
+      "languages": ["en"],
+      "category": "Business, Strategy",
+      "rating": 2
+    },
+    {
+      "id": 5,
+      "image": "https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/44bf1374c4230e2655135b2a68fc7ccf-450x600.jpg",
+      "title": "Pushing Clouds",
+      "authors": "Shelley, Mary Wollstonecraft",
+      "review": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "price": 18,
+      "discount": 2,
+      "languages": ["en"],
+      "category": "Business, Strategy",
+      "rating": 2
+    },
+    {
+      "id": 6,
+      "image": "https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/44bf1374c4230e2655135b2a68fc7ccf-450x600.jpg",
+      "title": "Terrible Madness",
+      "authors": "Shelley, Mary Wollstonecraft",
+      "review": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "description": "Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod tempor invidunt magna aliquyam.",
+      "price": 18,
+      "discount": 2,
+      "languages": ["en"],
+      "category": "Business, Strategy",
+      "rating": 2
+    }
+  ]
+}
