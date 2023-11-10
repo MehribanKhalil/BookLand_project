@@ -89,234 +89,6 @@ p {
   margin: 30px 0;
 }
 
-#bookland_intro {
-  background: url(https://bookland.wprdx.com/demo/wp-content/themes/bookland//assets/images/background/waveelement2.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#bookland_intro .intro_left {
-  padding: 100px 0 20px;
-}
-#bookland_intro .intro_left h5 {
-  letter-spacing: 20px;
-  color: #e5588d;
-  font-weight: 400;
-}
-#bookland_intro .intro_left h1 {
-  font-size: clamp(1.5rem, 0.9796rem + 2.7755vw, 3.2rem);
-}
-#bookland_intro .intro_left .author_category a {
-  color: #192436;
-  font-size: 1.125rem;
-  margin-right: 20px;
-  font-weight: 300;
-}
-#bookland_intro .intro_left .quote {
-  border-left: 1px solid #3b2f4a;
-  padding-left: 30px;
-  margin: 30px 0;
-}
-#bookland_intro .intro_left .quote p {
-  color: #192436;
-  max-width: 600px;
-}
-#bookland_intro .intro_left .price {
-  margin: 25px 0;
-}
-#bookland_intro .intro_left .price .discounted_price {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #e5588d;
-}
-#bookland_intro .intro_left .price .original_price {
-  font-family: var(--font-family-title);
-  color: #5f5c9d;
-  font-size: 1.02rem;
-  padding: 0 10px;
-  text-decoration: line-through;
-}
-#bookland_intro .intro_left .price .discount {
-  font-size: 0.8rem;
-  font-weight: 500;
-  background-color: #ff1e6f;
-  border-radius: 6px;
-  color: #fff;
-  padding: 2px 7px;
-}
-#bookland_intro .intro_left .left_side_buttons .btn_buy {
-  color: #fff;
-  background: #e5588d;
-  border: 1px solid #e5588d;
-  border-radius: 6px;
-  padding: 12px 19px;
-  outline: none;
-  font-size: 0.9rem;
-  transition: all 0.4s ease;
-  margin-right: 20px;
-}
-#bookland_intro .intro_left .left_side_buttons .btn_buy:hover {
-  background-color: #e5588d;
-  color: #fff;
-}
-#bookland_intro .intro_left .left_side_buttons .btn_details {
-  color: #1a1668;
-  background: #fff;
-  border: 1px solid #1a1668;
-  border-radius: 6px;
-  padding: 12px 19px;
-  outline: none;
-  font-size: 0.9rem;
-  transition: all 0.4s ease;
-  padding-right: 20px;
-}
-#bookland_intro .intro_left .left_side_buttons .btn_details:hover {
-  background-color: #1a1668;
-  color: #fff;
-}
-#bookland_intro .intro_left .left_side_partners {
-  padding-top: 80px;
-}
-#bookland_intro .intro_left .left_side_partners p {
-  color: #9290b0;
-  padding: 10px 0;
-}
-#bookland_intro .intro_left .left_side_partners img {
-  padding-right: 10px;
-}
-#bookland_intro .intro_right {
-  position: relative;
-  z-index: 1;
-}
-#bookland_intro .intro_right img {
-  width: 100%;
-  height: auto;
-}
-@media screen and (max-width: 992px) {
-  #bookland_intro .intro_left {
-    padding: 20px 0;
-  }
-  #bookland_intro .intro_left h5 {
-    padding-top: 20px;
-  }
-  #bookland_intro .intro_left .left_side_partners {
-    display: none;
-  }
-}
-
-#best_choice {
-  padding: 80px 0;
-}
-#best_choice .left_side .left_side_img img {
-  border-radius: 6px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-#best_choice .left_side .experience_category {
-  max-width: 400px;
-  position: relative;
-  margin-left: -150px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-#best_choice .left_side .experience_category .experience {
-  background-color: #e5588d;
-  border-radius: 6px;
-  color: #fff;
-  padding: 20px;
-  max-width: 170px;
-}
-#best_choice .left_side .experience_category .experience span {
-  font-size: 62px;
-  font-weight: 700;
-}
-#best_choice .left_side .experience_category .experience p {
-  font-size: 20px;
-}
-#best_choice .left_side .category {
-  padding: 20px;
-}
-#best_choice .left_side .category i {
-  color: #e5588d;
-  padding-right: 10px;
-}
-#best_choice .right_side {
-  padding: 0 30px;
-}
-#best_choice .right_side p {
-  margin: 40px 0;
-}
-#best_choice .right_side .right_side_btn {
-  color: #fff;
-  background: #e5588d;
-  border: 1px solid #e5588d;
-  border-radius: 6px;
-  padding: 12px 19px;
-  outline: none;
-  font-size: 0.9rem;
-  transition: all 0.4s ease;
-}
-#best_choice .right_side .right_side_btn:hover {
-  background-color: #e5588d;
-  color: #fff;
-}
-@media screen and (max-width: 992px) {
-  #best_choice .right_side {
-    padding-top: 40px;
-  }
-}
-@media screen and (max-width: 575px) {
-  #best_choice {
-    padding: 40px 0;
-  }
-  #best_choice .left_side .experience_category {
-    width: 100%;
-    display: block;
-    margin-left: 0;
-  }
-  #best_choice .left_side .experience_category .experience {
-    max-width: 100%;
-    padding: 5px;
-  }
-  #best_choice .left_side .experience_category .experience span {
-    font-size: 2rem;
-  }
-  #best_choice .left_side .experience_category .experience p {
-    font-size: 1rem;
-  }
-  #best_choice .left_side .experience_category .category {
-    display: none;
-  }
-}
-
-#companies {
-  margin: 50px 0;
-}
-#companies .swiper .swiper-slide {
-  text-align: center;
-}
-#companies .swiper .swiper-slide img {
-  max-width: 150px;
-  display: block;
-  object-fit: cover;
-  margin: 0 auto;
-  filter: grayscale(1);
-  opacity: 0.6;
-  transition: all 0.3s ease;
-}
-#companies .swiper .swiper-slide img:hover {
-  cursor: pointer;
-  filter: grayscale(0);
-  opacity: 1;
-}
-
-#counter {
-  padding: 50px 0;
-  text-align: center;
-}
-
 header {
   border-bottom: 1px solid #e4e4e4;
 }
@@ -1409,7 +1181,6 @@ header .menu .modalactive {
     display: none;
   }
 }
-
 #footer-category {
   background-color: #e5588d;
   color: white;
@@ -1578,6 +1349,234 @@ header .menu .modalactive {
     text-align: center;
   }
 }
+#bookland_intro {
+  background: url(https://bookland.wprdx.com/demo/wp-content/themes/bookland//assets/images/background/waveelement2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bookland_intro .intro_left {
+  padding: 100px 0 20px;
+}
+#bookland_intro .intro_left h5 {
+  letter-spacing: 20px;
+  color: #e5588d;
+  font-weight: 400;
+}
+#bookland_intro .intro_left h1 {
+  font-size: clamp(1.5rem, 0.9796rem + 2.7755vw, 3.2rem);
+}
+#bookland_intro .intro_left .author_category a {
+  color: #192436;
+  font-size: 1.125rem;
+  margin-right: 20px;
+  font-weight: 300;
+}
+#bookland_intro .intro_left .quote {
+  border-left: 1px solid #3b2f4a;
+  padding-left: 30px;
+  margin: 30px 0;
+}
+#bookland_intro .intro_left .quote p {
+  color: #192436;
+  max-width: 600px;
+}
+#bookland_intro .intro_left .price {
+  margin: 25px 0;
+}
+#bookland_intro .intro_left .price .discounted_price {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #e5588d;
+}
+#bookland_intro .intro_left .price .original_price {
+  font-family: var(--font-family-title);
+  color: #5f5c9d;
+  font-size: 1.02rem;
+  padding: 0 10px;
+  text-decoration: line-through;
+}
+#bookland_intro .intro_left .price .discount {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #ff1e6f;
+  border-radius: 6px;
+  color: #fff;
+  padding: 2px 7px;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_buy {
+  color: #fff;
+  background: #e5588d;
+  border: 1px solid #e5588d;
+  border-radius: 6px;
+  padding: 12px 19px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: all 0.4s ease;
+  margin-right: 20px;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_buy:hover {
+  background-color: #e5588d;
+  color: #fff;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_details {
+  color: #1a1668;
+  background: #fff;
+  border: 1px solid #1a1668;
+  border-radius: 6px;
+  padding: 12px 19px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: all 0.4s ease;
+  padding-right: 20px;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_details:hover {
+  background-color: #1a1668;
+  color: #fff;
+}
+#bookland_intro .intro_left .left_side_partners {
+  padding-top: 80px;
+}
+#bookland_intro .intro_left .left_side_partners p {
+  color: #9290b0;
+  padding: 10px 0;
+}
+#bookland_intro .intro_left .left_side_partners img {
+  padding-right: 10px;
+}
+#bookland_intro .intro_right {
+  position: relative;
+  z-index: 1;
+}
+#bookland_intro .intro_right img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 992px) {
+  #bookland_intro .intro_left {
+    padding: 20px 0;
+  }
+  #bookland_intro .intro_left h5 {
+    padding-top: 20px;
+  }
+  #bookland_intro .intro_left .left_side_partners {
+    display: none;
+  }
+}
+
+#best_choice {
+  padding: 80px 0;
+}
+#best_choice .left_side .left_side_img img {
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+#best_choice .left_side .experience_category {
+  max-width: 400px;
+  position: relative;
+  margin-left: -150px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+#best_choice .left_side .experience_category .experience {
+  background-color: #e5588d;
+  border-radius: 6px;
+  color: #fff;
+  padding: 20px;
+  max-width: 170px;
+}
+#best_choice .left_side .experience_category .experience span {
+  font-size: 62px;
+  font-weight: 700;
+}
+#best_choice .left_side .experience_category .experience p {
+  font-size: 20px;
+}
+#best_choice .left_side .category {
+  padding: 20px;
+}
+#best_choice .left_side .category i {
+  color: #e5588d;
+  padding-right: 10px;
+}
+#best_choice .right_side {
+  padding: 0 30px;
+}
+#best_choice .right_side p {
+  margin: 40px 0;
+}
+#best_choice .right_side .right_side_btn {
+  color: #fff;
+  background: #e5588d;
+  border: 1px solid #e5588d;
+  border-radius: 6px;
+  padding: 12px 19px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: all 0.4s ease;
+}
+#best_choice .right_side .right_side_btn:hover {
+  background-color: #e5588d;
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  #best_choice .right_side {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #best_choice {
+    padding: 40px 0;
+  }
+  #best_choice .left_side .experience_category {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+  #best_choice .left_side .experience_category .experience {
+    max-width: 100%;
+    padding: 5px;
+  }
+  #best_choice .left_side .experience_category .experience span {
+    font-size: 2rem;
+  }
+  #best_choice .left_side .experience_category .experience p {
+    font-size: 1rem;
+  }
+  #best_choice .left_side .experience_category .category {
+    display: none;
+  }
+}
+
+#companies {
+  margin: 50px 0;
+}
+#companies .swiper .swiper-slide {
+  text-align: center;
+}
+#companies .swiper .swiper-slide img {
+  max-width: 150px;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+#companies .swiper .swiper-slide img:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+#counter {
+  padding: 50px 0;
+  text-align: center;
+}
+
 #content-inner {
   padding-top: 70px;
   padding-bottom: 40px;
@@ -1746,4 +1745,5 @@ header .menu .modalactive {
   justify-content: center;
   color: #fff;
   background-color: #1a1668;
-  gap: 8px;}
+  gap: 8px;
+}/*# sourceMappingURL=main.css.map */

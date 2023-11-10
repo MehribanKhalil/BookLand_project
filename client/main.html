@@ -1,580 +1,607 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
 
-  <!-- link bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-
-  <!-- link fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- link Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-  <!-- link css -->
-  <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
-  <title>Document</title>
-</head>
+    <title>Document</title>
+  </head>
 
-<body>
-  <header>
-    <div class="container">
-      <div class="menu">
-        <div class="imgbox">
-          <img src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-4.png" alt="">
-        </div>
-        <form action="">
-          <div class="btn">
-            <button>Choose Category</button>
-            <ul class="category">
-              <li class="choosecategory">
-                <a href="">Choose Category</a>
-              </li>
-              <li>
-                <a href="">Action</a>
-              </li>
-              <li>
-                <a href="">Architecture</a>
-              </li>
-              <li>
-                <a href="">Art</a>
-              </li>
-              <li>
-                <a href="">Biography</a>
-              </li>
-              <li>
-                <a href="">Body,Mind & Spirit</a>
-              </li>
-              <li>
-                <a href="">Business</a>
-              </li>
-              <li>
-                <a href="">Business & Economics</a>
-              </li>
-              <li>
-                <a href="">Children Fiction</a>
-              </li>
-              <li>
-                <a href="">Children MFiction</a>
-              </li>
-              <li>
-                <a href="">Comics & Graphics</a>
-              </li>
-              <li>
-                <a href="">Cooking</a>
-              </li>
-              <li>
-                <a href="">Craft & Hobbies</a>
-              </li>
-              <li>
-                <a href="">Design</a>
-              </li>
-              <li>
-                <a href="">Drama</a>
-              </li>
-              <li>
-                <a href="">Education</a>
-              </li>
-              <li>
-                <a href="">Family & Relationships</a>
-              </li>
-              <li>
-                <a href="">Fiction</a>
-              </li>
-              <li>
-                <a href="">Foreign Languages</a>
-              </li>
-              <li>
-                <a href="">Games</a>
-              </li>
-              <li>
-                <a href="">Gardenings</a>
-              </li>
-              <li>
-                <a href="">Health & Fitness</a>
-              </li>
-              <li>
-                <a href="">History</a>
-              </li>
-              <li>
-                <a href="">Horror</a>
-              </li>
-              <li>
-                <a href="">Literary Collections</a>
-              </li>
-              <li>
-                <a href="">Mathematics</a>
-              </li>
-              <li>
-                <a href="">Medical</a>
-              </li>
-              <li>
-                <a href="">Nature</a>
-              </li>
-              <li>
-                <a href="">Performing Acts</a>
-              </li>
-              <li>
-                <a href="">Pets</a>
-              </li>
-              <li>
-                <a href="">Show Others</a>
-              </li>
-              <li>
-                <a href="">Sport</a>
-              </li>
-              <li>
-                <a href="">Strategy</a>
-              </li>
-              <li>
-                <a href="">Thriller</a>
-              </li>
-              <li>
-                <a href="">Uncategorized</a>
-              </li>
-            </ul>
+  <body>
+    <header>
+      <div class="container">
+        <div class="menu">
+          <div class="imgbox">
+            <img
+              src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-4.png"
+              alt=""
+            />
           </div>
-          <div class="input">
-            <input type="search" placeholder="Search Books Here">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </form>
-        <ul class="images">
-          <li>
-            <a class="heart" href="">
-              <img src="https://img.icons8.com/sf-regular/48/hearts.png" alt="hearts" />
-              <span class="wishlist">0</span>
-            </a>
-          </li>
-          <li>
-            <a class="shopping-cart" href="">
-              <img src="https://img.icons8.com/sf-regular/48/shopping-cart.png" alt="shopping-cart" />
-              <span class="cardlist">0</span>
-              <div class="basket">
-                <div class="bottomside">
-                  <div class="subtotal">
-                    <strong>Subtotal:</strong>
-                    <span>0$</span>
-                  </div>
-                  <div class="btn">
-                    <button>VIEW CART</button>
-                    <button>CHECKOUT</button>
+          <form action="">
+            <div class="btn">
+              <button>Choose Category</button>
+              <ul class="category">
+                <li class="choosecategory">
+                  <a href="">Choose Category</a>
+                </li>
+                <li>
+                  <a href="">Action</a>
+                </li>
+                <li>
+                  <a href="">Architecture</a>
+                </li>
+                <li>
+                  <a href="">Art</a>
+                </li>
+                <li>
+                  <a href="">Biography</a>
+                </li>
+                <li>
+                  <a href="">Body,Mind & Spirit</a>
+                </li>
+                <li>
+                  <a href="">Business</a>
+                </li>
+                <li>
+                  <a href="">Business & Economics</a>
+                </li>
+                <li>
+                  <a href="">Children Fiction</a>
+                </li>
+                <li>
+                  <a href="">Children MFiction</a>
+                </li>
+                <li>
+                  <a href="">Comics & Graphics</a>
+                </li>
+                <li>
+                  <a href="">Cooking</a>
+                </li>
+                <li>
+                  <a href="">Craft & Hobbies</a>
+                </li>
+                <li>
+                  <a href="">Design</a>
+                </li>
+                <li>
+                  <a href="">Drama</a>
+                </li>
+                <li>
+                  <a href="">Education</a>
+                </li>
+                <li>
+                  <a href="">Family & Relationships</a>
+                </li>
+                <li>
+                  <a href="">Fiction</a>
+                </li>
+                <li>
+                  <a href="">Foreign Languages</a>
+                </li>
+                <li>
+                  <a href="">Games</a>
+                </li>
+                <li>
+                  <a href="">Gardenings</a>
+                </li>
+                <li>
+                  <a href="">Health & Fitness</a>
+                </li>
+                <li>
+                  <a href="">History</a>
+                </li>
+                <li>
+                  <a href="">Horror</a>
+                </li>
+                <li>
+                  <a href="">Literary Collections</a>
+                </li>
+                <li>
+                  <a href="">Mathematics</a>
+                </li>
+                <li>
+                  <a href="">Medical</a>
+                </li>
+                <li>
+                  <a href="">Nature</a>
+                </li>
+                <li>
+                  <a href="">Performing Acts</a>
+                </li>
+                <li>
+                  <a href="">Pets</a>
+                </li>
+                <li>
+                  <a href="">Show Others</a>
+                </li>
+                <li>
+                  <a href="">Sport</a>
+                </li>
+                <li>
+                  <a href="">Strategy</a>
+                </li>
+                <li>
+                  <a href="">Thriller</a>
+                </li>
+                <li>
+                  <a href="">Uncategorized</a>
+                </li>
+              </ul>
+            </div>
+            <div class="input">
+              <input type="search" placeholder="Search Books Here" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </form>
+          <ul class="images">
+            <li>
+              <a class="heart" href="">
+                <img
+                  src="https://img.icons8.com/sf-regular/48/hearts.png"
+                  alt="hearts"
+                />
+                <span class="wishlist">0</span>
+              </a>
+            </li>
+            <li>
+              <a class="shopping-cart" href="">
+                <img
+                  src="https://img.icons8.com/sf-regular/48/shopping-cart.png"
+                  alt="shopping-cart"
+                />
+                <span class="cardlist">0</span>
+                <div class="basket">
+                  <div class="bottomside">
+                    <div class="subtotal">
+                      <strong>Subtotal:</strong>
+                      <span>0$</span>
+                    </div>
+                    <div class="btn">
+                      <button>VIEW CART</button>
+                      <button>CHECKOUT</button>
+                    </div>
                   </div>
                 </div>
+              </a>
+            </li>
+            <li>
+              <a class="img" href="">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/profile1.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="rightside">
+            <div class="getintouch">
+              <a href="">Get In Touch</a>
+            </div>
+            <div class="btnmenu">
+              <div>
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
               </div>
-            </a>
-          </li>
-          <li>
-            <a class="img" href="">
-              <img src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/profile1.jpg" alt="">
-            </a>
-          </li>
-        </ul>
-        <div class="rightside">
-          <div class="getintouch">
-            <a href="">Get In Touch</a>
-          </div>
-          <div class="btnmenu">
-            <div>
-              <span class="line1"></span>
-              <span class="line2"></span>
-              <span class="line3"></span>
             </div>
           </div>
-        </div>
-        <div class="leftmodal">
-          <div class="imgbox">
-            <img src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-4.png" alt="">
-          </div>
-          <div class="input">
-            <input type="search" placeholder="Search Books Here">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <ul class="modal-list">
-            <li class="home">
-              <a href="">Home</a>
-              <div class="home-active">
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <div class="home-deactive">
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-            </li>
-            <ul class="subhome">
-              <li>
-                <a href="">Home 1</a>
-              </li>
-              <li>
-                <a href="">Home 2</a>
-              </li>
-              <li>
-                <a href="">Home 3</a>
-              </li>
-              <li>
-                <a href="">Home 4</a>
-              </li>
-            </ul>
-            <li class="about">
-              <a href="">About Us</a>
-            </li>
-            <li class="pages">
-              <a href="">Pages</a>
-              <div class="pages-active">
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <div class="pages-deactive">
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-            </li>
-            <ul class="subpages">
-              <li>
-                <a href="">Features</a>
-              </li>
-              <li>
-                <a href="">Faq's</a>
-              </li>
-              <li>
-                <a href="">Help Desk</a>
-              </li>
-              <li>
-                <a href="">Coming Soon</a>
-              </li>
-              <li>
-                <a href="">Pricing</a>
-              </li>
-              <li>
-                <a href="">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="">Under construction</a>
-              </li>
-              <li>
-                <a href="">Error 404</a>
-              </li>
-            </ul>
-            <li class="shop">
-              <a href="">Shop</a>
-              <div class="shop-active">
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <div class="shop-deactive">
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-            </li>
-            <ul class="subshop">
-              <li>
-                <a href="">Shop</a>
-              </li>
-              <li>
-                <a href="">Shop Sidebar</a>
-              </li>
-              <li>
-                <a href="">Product Details</a>
-              </li>
-              <li>
-                <a href="">Cart</a>
-              </li>
-              <li>
-                <a href="">Checkout</a>
-              </li>
-              <li>
-                <a href="">My Account</a>
-              </li>
-            </ul>
-            <li class="blog">
-              <a href="">Blog</a>
-              <div class="blog-active">
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-              <div class="blog-deactive">
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-            </li>
-            <ul class="subblog">
-              <li>
-                <a href="">Blog Grid</a>
-              </li>
-              <li>
-                <a href="">Blog Large Sidebar</a>
-              </li>
-              <li>
-                <a href="">Blog list Sidebar</a>
-              </li>
-              <li>
-                <a href="">Blog Details</a>
-              </li>
-            </ul>
-            <li class="contact">
-              <a href="">Contact Us</a>
-            </li>
-          </ul>
-          <div class="btn">
-            <button>Sign In</button>
-            <button>Sign Up</button>
-          </div>
-          <ul class="social">
-            <li>
-              <a href="">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-  <nav class="main-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="menu">
-            <ul>
+          <div class="leftmodal">
+            <div class="imgbox">
+              <img
+                src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-4.png"
+                alt=""
+              />
+            </div>
+            <div class="input">
+              <input type="search" placeholder="Search Books Here" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <ul class="modal-list">
               <li class="home">
                 <a href="">Home</a>
-                <ul class="subhome">
-                  <li>
-                    <a href="">Home 1</a>
-                  </li>
-                  <li>
-                    <a href="">Home 2</a>
-                  </li>
-                  <li>
-                    <a href="">Home 3</a>
-                  </li>
-                  <li>
-                    <a href="">Home 4</a>
-                  </li>
-                </ul>
+                <div class="home-active">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="home-deactive">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </li>
+              <ul class="subhome">
+                <li>
+                  <a href="">Home 1</a>
+                </li>
+                <li>
+                  <a href="">Home 2</a>
+                </li>
+                <li>
+                  <a href="">Home 3</a>
+                </li>
+                <li>
+                  <a href="">Home 4</a>
+                </li>
+              </ul>
               <li class="about">
                 <a href="">About Us</a>
               </li>
               <li class="pages">
                 <a href="">Pages</a>
-                <ul class="subpages">
-                  <li>
-                    <a href="">Features</a>
-                  </li>
-                  <li>
-                    <a href="">Faq's</a>
-                  </li>
-                  <li>
-                    <a href="">Help Desk</a>
-                  </li>
-                  <li>
-                    <a href="">Coming Soon</a>
-                  </li>
-                  <li>
-                    <a href="">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="">Under construction</a>
-                  </li>
-                  <li>
-                    <a href="">Error 404</a>
-                  </li>
-                </ul>
+                <div class="pages-active">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="pages-deactive">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </li>
+              <ul class="subpages">
+                <li>
+                  <a href="">Features</a>
+                </li>
+                <li>
+                  <a href="">Faq's</a>
+                </li>
+                <li>
+                  <a href="">Help Desk</a>
+                </li>
+                <li>
+                  <a href="">Coming Soon</a>
+                </li>
+                <li>
+                  <a href="">Pricing</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="">Under construction</a>
+                </li>
+                <li>
+                  <a href="">Error 404</a>
+                </li>
+              </ul>
               <li class="shop">
                 <a href="">Shop</a>
-                <ul class="subshop">
-                  <li>
-                    <a href="">Shop</a>
-                  </li>
-                  <li>
-                    <a href="">Shop Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Product Details</a>
-                  </li>
-                  <li>
-                    <a href="">Cart</a>
-                  </li>
-                  <li>
-                    <a href="">Checkout</a>
-                  </li>
-
-                  <li>
-                    <a href="">My Account</a>
-                  </li>
-                </ul>
+                <div class="shop-active">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="shop-deactive">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </li>
+              <ul class="subshop">
+                <li>
+                  <a href="">Shop</a>
+                </li>
+                <li>
+                  <a href="">Shop Sidebar</a>
+                </li>
+                <li>
+                  <a href="">Product Details</a>
+                </li>
+                <li>
+                  <a href="">Cart</a>
+                </li>
+                <li>
+                  <a href="">Checkout</a>
+                </li>
+                <li>
+                  <a href="">My Account</a>
+                </li>
+              </ul>
               <li class="blog">
                 <a href="">Blog</a>
-                <ul class="subblog">
-                  <li>
-                    <a href="">Blog Grid</a>
-                  </li>
-                  <li>
-                    <a href="">Blog Large Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Blog list Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Blog Details</a>
-                  </li>
-                </ul>
+                <div class="blog-active">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="blog-deactive">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
               </li>
+              <ul class="subblog">
+                <li>
+                  <a href="">Blog Grid</a>
+                </li>
+                <li>
+                  <a href="">Blog Large Sidebar</a>
+                </li>
+                <li>
+                  <a href="">Blog list Sidebar</a>
+                </li>
+                <li>
+                  <a href="">Blog Details</a>
+                </li>
+              </ul>
               <li class="contact">
                 <a href="">Contact Us</a>
               </li>
             </ul>
             <div class="btn">
-              <a href="">Get In Touch</a>
+              <button>Sign In</button>
+              <button>Sign Up</button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <nav class="nav-scroll">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="menu">
-            <ul>
-              <li class="home">
-                <a href="">Home</a>
-                <ul class="subhome">
-                  <li>
-                    <a href="">Home 1</a>
-                  </li>
-                  <li>
-                    <a href="">Home 2</a>
-                  </li>
-                  <li>
-                    <a href="">Home 3</a>
-                  </li>
-                  <li>
-                    <a href="">Home 4</a>
-                  </li>
-                </ul>
+            <ul class="social">
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
               </li>
-              <li class="about">
-                <a href="">About Us</a>
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
               </li>
-              <li class="pages">
-                <a href="">Pages</a>
-                <ul class="subpages">
-                  <li>
-                    <a href="">Features</a>
-                  </li>
-                  <li>
-                    <a href="">Faq's</a>
-                  </li>
-                  <li>
-                    <a href="">Help Desk</a>
-                  </li>
-                  <li>
-                    <a href="">Coming Soon</a>
-                  </li>
-                  <li>
-                    <a href="">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="">Under construction</a>
-                  </li>
-                  <li>
-                    <a href="">Error 404</a>
-                  </li>
-                </ul>
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </li>
-              <li class="shop">
-                <a href="">Shop</a>
-                <ul class="subshop">
-                  <li>
-                    <a href="">Shop</a>
-                  </li>
-                  <li>
-                    <a href="">Shop Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Product Details</a>
-                  </li>
-                  <li>
-                    <a href="">Cart</a>
-                  </li>
-                  <li>
-                    <a href="">Checkout</a>
-                  </li>
-
-                  <li>
-                    <a href="">My Account</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="blog">
-                <a href="">Blog</a>
-                <ul class="subblog">
-                  <li>
-                    <a href="">Blog Grid</a>
-                  </li>
-                  <li>
-                    <a href="">Blog Large Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Blog list Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Blog Details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="contact">
-                <a href="">Contact Us</a>
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
               </li>
             </ul>
-            <div class="btn">
-              <a href="">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="menu">
+              <ul>
+                <li class="home">
+                  <a href="">Home</a>
+                  <ul class="subhome">
+                    <li>
+                      <a href="">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="">Home 2</a>
+                    </li>
+                    <li>
+                      <a href="">Home 3</a>
+                    </li>
+                    <li>
+                      <a href="">Home 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="about">
+                  <a href="">About Us</a>
+                </li>
+                <li class="pages">
+                  <a href="">Pages</a>
+                  <ul class="subpages">
+                    <li>
+                      <a href="">Features</a>
+                    </li>
+                    <li>
+                      <a href="">Faq's</a>
+                    </li>
+                    <li>
+                      <a href="">Help Desk</a>
+                    </li>
+                    <li>
+                      <a href="">Coming Soon</a>
+                    </li>
+                    <li>
+                      <a href="">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="">Under construction</a>
+                    </li>
+                    <li>
+                      <a href="">Error 404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="shop">
+                  <a href="">Shop</a>
+                  <ul class="subshop">
+                    <li>
+                      <a href="">Shop</a>
+                    </li>
+                    <li>
+                      <a href="">Shop Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Product Details</a>
+                    </li>
+                    <li>
+                      <a href="">Cart</a>
+                    </li>
+                    <li>
+                      <a href="">Checkout</a>
+                    </li>
+
+                    <li>
+                      <a href="">My Account</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="blog">
+                  <a href="">Blog</a>
+                  <ul class="subblog">
+                    <li>
+                      <a href="">Blog Grid</a>
+                    </li>
+                    <li>
+                      <a href="">Blog Large Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Blog list Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="contact">
+                  <a href="">Contact Us</a>
+                </li>
+              </ul>
+              <div class="btn">
+                <a href="">Get In Touch</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </nav>
+    <nav class="nav-scroll">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="menu">
+              <ul>
+                <li class="home">
+                  <a href="">Home</a>
+                  <ul class="subhome">
+                    <li>
+                      <a href="">Home 1</a>
+                    </li>
+                    <li>
+                      <a href="">Home 2</a>
+                    </li>
+                    <li>
+                      <a href="">Home 3</a>
+                    </li>
+                    <li>
+                      <a href="">Home 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="about">
+                  <a href="">About Us</a>
+                </li>
+                <li class="pages">
+                  <a href="">Pages</a>
+                  <ul class="subpages">
+                    <li>
+                      <a href="">Features</a>
+                    </li>
+                    <li>
+                      <a href="">Faq's</a>
+                    </li>
+                    <li>
+                      <a href="">Help Desk</a>
+                    </li>
+                    <li>
+                      <a href="">Coming Soon</a>
+                    </li>
+                    <li>
+                      <a href="">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="">Under construction</a>
+                    </li>
+                    <li>
+                      <a href="">Error 404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="shop">
+                  <a href="">Shop</a>
+                  <ul class="subshop">
+                    <li>
+                      <a href="">Shop</a>
+                    </li>
+                    <li>
+                      <a href="">Shop Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Product Details</a>
+                    </li>
+                    <li>
+                      <a href="">Cart</a>
+                    </li>
+                    <li>
+                      <a href="">Checkout</a>
+                    </li>
+
+                    <li>
+                      <a href="">My Account</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="blog">
+                  <a href="">Blog</a>
+                  <ul class="subblog">
+                    <li>
+                      <a href="">Blog Grid</a>
+                    </li>
+                    <li>
+                      <a href="">Blog Large Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Blog list Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="contact">
+                  <a href="">Contact Us</a>
+                </li>
+              </ul>
+              <div class="btn">
+                <a href="">Get In Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="back">
+      <a href="">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </div>
-  </nav>
-  <div class="back">
-    <a href="">
-      <i class="fa-solid fa-arrow-up"></i>
-    </a>
-  </div>
-  <section>
-    <p>
-      odio voluptas maiores aliquid itaque inventore earum adipisci, dolorum sed. Eum consectetur voluptatem suscipit
-      itaque nihil dicta ad in debitis velit harum commodi unde repellat perspiciatis, maxime quia eveniet reiciendis
-      obcaecati odio amet hic, voluptates fugit provident cumque quos. Quis officia aliquid nihil cum molestias maiores
-      nam minima  rerum maiores. Harum laudantium reiciendis, provident, commodi quia
-      ducimus officiis fugit, ea explicabo cum voluptas dolorum consectetur saepe tempora? Ullam sint atque est fugit
-      eaque velit, repudiandae totam aliquid magni?
-    </p>
-  </section>
+    <section>
+      <p>
+        odio voluptas maiores aliquid itaque inventore earum adipisci, dolorum
+        sed. Eum consectetur voluptatem suscipit itaque nihil dicta ad in
+        debitis velit harum commodi unde repellat perspiciatis, maxime quia
+        eveniet reiciendis obcaecati odio amet hic, voluptates fugit provident
+        cumque quos. Quis officia aliquid nihil cum molestias maiores nam minima
+        rerum maiores. Harum laudantium reiciendis, provident, commodi quia
+        ducimus officiis fugit, ea explicabo cum voluptas dolorum consectetur
+        saepe tempora? Ullam sint atque est fugit eaque velit, repudiandae totam
+        aliquid magni?
+      </p>
+    </section>
 
     <!-- main start -->
 
@@ -659,7 +686,8 @@
 
                   <div class="left_side experience_category">
                     <div class="experience">
-                      <span class="experience_counter" countData="40">0</span><span>+</span>
+                      <span class="experience_counter" countData="40">0</span
+                      ><span>+</span>
                       <p>Years of Experience</p>
                     </div>
 
@@ -754,399 +782,482 @@
       <section id="counter">
         <div class="container">
           <div class="row">
-
             <div class="col-6 col-lg-3">
-
               <div class="counter_items">
-                    <div class="counter_icon">
-                      <i class="fa-solid fa-users"></i>
-                    </div>
-
-                    <div class="counter_content">
-                      <h2 class="counter_count" data="88">88</h2>
-                      <p class="counter_text">Happy Customers</p>
-                    </div>
-              </div>
-
-            </div>
-
-            <div class="col-6 col-lg-3">
-
-              <div class="counter_items">
-                  <div class="counter_icon">
-                    <i class="fa-solid fa-book"></i>
-                  </div>
-    
-                  <div class="counter_content">
-                    <h2 class="counter_count" data="76">76</h2>
-                    <p class="counter_text">Book Collections</p>
-                  </div>
-              </div>
-
-            </div>
-
-            <div class="col-6 col-lg-3">
-              
-                <div class="counter_items">
-                  <div class="counter_icon">
-                    <i class="fa-solid fa-store"></i>
-                  </div>
-    
-                  <div class="counter_content">
-                    <h2 class="counter_count " data="100">100</h2>
-                    <p class="counter_text">Our Stores</p>
-                  </div>
+                <div class="counter_icon">
+                  <i class="fa-solid fa-users"></i>
                 </div>
 
+                <div class="counter_content">
+                  <h2 class="counter_count" data="88">88</h2>
+                  <p class="counter_text">Happy Customers</p>
+                </div>
+              </div>
             </div>
 
             <div class="col-6 col-lg-3">
-              
+              <div class="counter_items">
+                <div class="counter_icon">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+
+                <div class="counter_content">
+                  <h2 class="counter_count" data="76">76</h2>
+                  <p class="counter_text">Book Collections</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="counter_items">
+                <div class="counter_icon">
+                  <i class="fa-solid fa-store"></i>
+                </div>
+
+                <div class="counter_content">
+                  <h2 class="counter_count" data="100">100</h2>
+                  <p class="counter_text">Our Stores</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
               <div class="counter_items">
                 <div class="counter_icon">
                   <i class="fa-solid fa-leaf"></i>
                 </div>
-  
+
                 <div class="counter_content">
                   <h2 class="counter_count" data="150">150</h2>
                   <p class="counter_text">Famous Writers</p>
                 </div>
               </div>
-
             </div>
-
-<!-- cards for api  -->
-<div class="swiper-card">
-  <div class="book-card">
-    <div class="img-book">
-      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png" alt="">
-    </div>
-    <div class="content-book">
-      <h4 class="title"><a href="">Think</a></h4>
-      <span class="price">$10	<del>$25</del></span>
-      <a  class="add-to-card" href=""><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
-    </div>
-  </div>
-  <div class="book-card">
-    <div class="img-book">
-      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png" alt="">
-    </div>
-    <div class="content-book">
-      <h4 class="title"><a href="">Think</a></h4>
-      <span class="price">$10	<del>$25</del></span>
-      <a  class="add-to-card" href=""><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
-    </div>
-  </div>
-  <div class="book-card">
-    <div class="img-book">
-      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png" alt="">
-    </div>
-    <div class="content-book">
-      <h4 class="title"><a href="">Think</a></h4>
-      <span class="price">$10	<del>$25</del></span>
-      <a  class="add-to-card" href=""><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
-    </div>
-  </div>
-  <div class="book-card">
-    <div class="img-book">
-      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png" alt="">
-    </div>
-    <div class="content-book">
-      <h4 class="title"><a href="">Think</a></h4>
-      <span class="price">$10	<del>$25</del></span>
-      <a  class="add-to-card" href=""><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
-    </div>
-  </div>
-</div>
-
-<!-- cards for api  -->
-
-
-
-<!-- content inner shake start   -->
-<section id="content-inner">
-  <div class="container">
-    <div class="row">
-      <div class="card-inner col-12 col-md-6 col-lg-3">
-        <div class="icon-center">
-      <div class="icon">
-        <i class="fa-solid fa-bolt-lightning icon-cell"></i>
-      </div></div>
-      <div class="content">
-        <h5>Quick Delivery</h5>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-      </div>
-      </div>
-      <div class="card-inner col-12 col-md-6 col-lg-3"> 
-        <div class="icon-center">
-          <div class="icon">
-        <i class="fa-solid fa-shield-halved icon-cell"></i>
-      </div></div>
-      <div class="content">
-        <h5>Secure Payment</h5>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-      </div></div>
-      <div class="card-inner col-12 col-md-6 col-lg-3"> 
-        <div class="icon-center">
-        <div class="icon">
-        <i class="fa-solid fa-thumbs-up icon-cell"></i>
-      </div></div>
-      <div class="content">
-        <h5>Best Quality</h5>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-      </div></div>
-      <div class="card-inner col-12 col-md-6 col-lg-3"> 
-        <div class="icon-center">
-        <div class="icon">
-        <i class="fa-solid fa-star icon-cell"></i>
-      </div></div>
-      <div class="content">
-        <h5>Return Guarantee</h5>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-      </div></div>
-    </div>
-  </div>
-</section>
-<!-- content inner shake end  -->
-
-
-
-
-
-
-
-<!-- our-mission start  -->
-<section id="our-mission">
-<div class="container">
-<div class="section-head">
-<h2 class="title">
-Our Mission</h2>
-<p>
-  Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-</div>
-<div class="row justify-content-center">
-
-<div class="col-lg-4 col-md-6 mission-card">
-<div class="content-mission">
-<div class="icon">
-<i class="fa-solid fa-book-open"></i>
-</div>
-<div class="content-text">
-<h4>Best Bookstore</h4>
-<p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<a href="">Learn More <i class="fa-solid fa-angles-right"></i></a>
-</div>
-</div>
-</div>
-
-<div class="col-lg-4 col-md-6 mission-card">
-<div class="content-mission">
-<div class="icon">
-<i class="fa-solid fa-medal"></i>
-</div>
-<div class="content-text">
-<h4> Trusted Seller</h4>
-<p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<a href="">Learn More <i class="fa-solid fa-angles-right"></i></a>
-</div>
-</div>
-</div>
-
-<div class="col-lg-4 col-md-6 mission-card">
-<div class="content-mission">
-<div class="icon">
-<i class="fa-solid fa-store"></i>
-</div>
-<div class="content-text">
-<h4>Best Bookstore</h4>
-<p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<a href="">Learn More <i class="fa-solid fa-angles-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- our-mission end  -->
-
-
-
-
-
-<!-- footer start  -->
-<footer>
-<!-- footer category start  -->
-<div id="footer-category">
-
-<div class="container">
-<div class="category-toogle">
-
-<div class="btn-footer-collapse"><a href="">Books categories</a></div>
-
-<div class="category-accordion">
-
-<div class="row">
-<ul class="col-6  col-lg-3">
-<li><a href="">Action</a></li>
-<li><a href=""> Body,Mind & Spirit</a></li>
-<li><a href="">Children Non-Fiction</a></li>
-<li><a href="">Design</a></li>
-<li><a href="">Fiction</a></li>
-<li><a href="">Health & Fitness</a></li>
-<li><a href="">Humor</a></li>
-<li><a href="">Nature</a></li>
-<li><a href="">Sports</a></li>
-
-</ul>
-<ul class="col-6  col-lg-3">
-<li><a href="">Architecture</a></li>
-<li><a href="">Business</a></li>
-<li><a href="">Comics & Graphics</a></li>
-<li><a href="">Drama</a></li>
-<li><a href="">Foreign Language</a></li>
-<li><a href="">History</a></li>
-<li><a href="">Literally Collections</a></li>
-<li><a href="">Performing Arts</a></li>
-<li><a href="">Strategy</a></li>
-</ul>
-<ul class="col-6  col-lg-3">
-<li><a href="">Art</a></li>
-<li><a href="">Business & Economics</a></li>
-<li><a href="">Cooking</a></li>
-<li><a href="">Education</a></li>
-<li><a href="">Games</a></li>
-<li><a href="">Horror</a></li>
-<li><a href="">Mathematics</a></li>
-<li><a href="">Pets</a></li>
-<li><a href="">Thriller</a></li>
-</ul>
-<ul class="col-6  col-lg-3">
-<li><a href="">Biography</a></li>
-<li><a href="">Children Fiction</a></li>
-<li><a href="">Grafts & Hobbies</a></li>
-<li><a href="">Family and Relationships</a></li>
-<li><a href="">Gardening</a></li>
-<li><a href="">House & Home</a></li>
-<li><a href="">Medical</a></li>
-<li><a href="">Show others</a></li>
-<li><a href="">Uncategorized</a></li>
-</ul>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<!-- footer category end  -->
-
-<!-- footer top start  -->
-<div id="footer-top">
-<div class="container">
-<div class="row">
-<div class="booksore-icons col-12 col-md-12 col-lg-3">
-<div class="img-logo">
-<img src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-white.png" alt="">
-</div>
-<p class="text">
-Bookland is a Book Store Ecommerce Website Template by DexignZone lorem ipsum dolor sit
-</p>
-<div class="social-media">
-<ul>
-    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-</ul>
-</div>
-</div>
-<div class="links col-4 col-md-3 col-lg-2"><h5>Our Links </h5>
-<ul>
-<li><i class="fa-solid fa-angle-right"></i><a href="">About Us</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Contact Us</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Privacy Policy</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Pricing</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Faq's</a></li>
-</ul>
-</div>
-<div class="links col-4 col-md-3 col-lg-2"><h5>Bookland</h5>
-<ul>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Blog</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Shop</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Checkout</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Cart</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Wishlist</a></li>
-</ul>
-</div>
-<div class="links col-4 col-md-3 col-lg-2"><h5>Resources</h5>
-<ul>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Home</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Features</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Blog Grid</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">Help Desk</a></li>
-<li><i class="fa-solid fa-angle-right"></i><a href="">My Account</a></li>
-</ul>
-</div>
-<div class="contacts col-12 col-md-3 col-lg-3">
-<h5>Get in Touch With Us</h5>
-<ul>
-<li><i class="fa-solid fa-location-dot"></i><p>
-    832 Thompson Drive, San Fransisco CA 94107,US</p></li>
-<li><i class="fa-solid fa-phone"></i><p>+123 345123 556 <br>+123 345123 556</p></li>
-<li><i class="fa-regular fa-envelope"></i><p>support@bookland.id <br>info@bookland.id</p></li>
-</ul>
-</div>
-
-</div>
-</div>
-</div>
-<!-- footer top end  -->
-<!-- footer bottom start  -->
-<div id="footer-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="text-start col-lg-6 col-md-12">
-        <p class="copyright-text">
-          Bookland Book Store Ecommerce Website - © 2022 All Rights Reserved</p>
-      </div>
-      <div class="text-end col-lg-6 col-md-12">
-        <p class="copyright-text-end">
-          Made with <i class="fa-solid fa-heart"></i> by <a href="">DexignZone</a>
-        </p>
-         
-      </div>
-    </div>
-  </div>
-</div>
-<!-- footer bottom end  -->
-</footer>
-<!-- footer end  -->
-
-
-
-
-
-
-
           </div>
         </div>
       </section>
       <!-- counter section end -->
 
+      <!-- cards for api  -->
+      <div class="swiper-card">
+        <div class="book-card">
+          <div class="img-book">
+            <img
+              src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png"
+              alt=""
+            />
+          </div>
+          <div class="content-book">
+            <h4 class="title"><a href="">Think</a></h4>
+            <span class="price">$10 <del>$25</del></span>
+            <a class="add-to-card" href=""
+              ><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a
+            >
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="img-book">
+            <img
+              src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png"
+              alt=""
+            />
+          </div>
+          <div class="content-book">
+            <h4 class="title"><a href="">Think</a></h4>
+            <span class="price">$10 <del>$25</del></span>
+            <a class="add-to-card" href=""
+              ><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a
+            >
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="img-book">
+            <img
+              src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png"
+              alt=""
+            />
+          </div>
+          <div class="content-book">
+            <h4 class="title"><a href="">Think</a></h4>
+            <span class="price">$10 <del>$25</del></span>
+            <a class="add-to-card" href=""
+              ><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a
+            >
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="img-book">
+            <img
+              src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png"
+              alt=""
+            />
+          </div>
+          <div class="content-book">
+            <h4 class="title"><a href="">Think</a></h4>
+            <span class="price">$10 <del>$25</del></span>
+            <a class="add-to-card" href=""
+              ><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- cards for api  -->
+
+      <!-- content inner shake start   -->
+      <section id="content-inner">
+        <div class="container">
+          <div class="row">
+            <div class="card-inner col-12 col-md-6 col-lg-3">
+              <div class="icon-center">
+                <div class="icon">
+                  <i class="fa-solid fa-bolt-lightning icon-cell"></i>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Quick Delivery</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+            <div class="card-inner col-12 col-md-6 col-lg-3">
+              <div class="icon-center">
+                <div class="icon">
+                  <i class="fa-solid fa-shield-halved icon-cell"></i>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Secure Payment</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+            <div class="card-inner col-12 col-md-6 col-lg-3">
+              <div class="icon-center">
+                <div class="icon">
+                  <i class="fa-solid fa-thumbs-up icon-cell"></i>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Best Quality</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+            <div class="card-inner col-12 col-md-6 col-lg-3">
+              <div class="icon-center">
+                <div class="icon">
+                  <i class="fa-solid fa-star icon-cell"></i>
+                </div>
+              </div>
+              <div class="content">
+                <h5>Return Guarantee</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- content inner shake end  -->
+
+      <!-- our-mission start  -->
+      <section id="our-mission">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="title">Our Mission</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mission-card">
+              <div class="content-mission">
+                <div class="icon">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="content-text">
+                  <h4>Best Bookstore</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href=""
+                    >Learn More <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mission-card">
+              <div class="content-mission">
+                <div class="icon">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <div class="content-text">
+                  <h4>Trusted Seller</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href=""
+                    >Learn More <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mission-card">
+              <div class="content-mission">
+                <div class="icon">
+                  <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="content-text">
+                  <h4>Best Bookstore</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href=""
+                    >Learn More <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our-mission end  -->
     </main>
-    <!-- main end -->  
+    <!-- main end -->
 
-  <!-- js links -->
+    <!-- footer start  -->
+    <footer>
+      <!-- footer category start  -->
+      <div id="footer-category">
+        <div class="container">
+          <div class="category-toogle">
+            <div class="btn-footer-collapse">
+              <a href="">Books categories</a>
+            </div>
 
-  <script src="./assets/js/app.js"></script>
+            <div class="category-accordion">
+              <div class="row">
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Action</a></li>
+                  <li><a href=""> Body,Mind & Spirit</a></li>
+                  <li><a href="">Children Non-Fiction</a></li>
+                  <li><a href="">Design</a></li>
+                  <li><a href="">Fiction</a></li>
+                  <li><a href="">Health & Fitness</a></li>
+                  <li><a href="">Humor</a></li>
+                  <li><a href="">Nature</a></li>
+                  <li><a href="">Sports</a></li>
+                </ul>
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Architecture</a></li>
+                  <li><a href="">Business</a></li>
+                  <li><a href="">Comics & Graphics</a></li>
+                  <li><a href="">Drama</a></li>
+                  <li><a href="">Foreign Language</a></li>
+                  <li><a href="">History</a></li>
+                  <li><a href="">Literally Collections</a></li>
+                  <li><a href="">Performing Arts</a></li>
+                  <li><a href="">Strategy</a></li>
+                </ul>
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Art</a></li>
+                  <li><a href="">Business & Economics</a></li>
+                  <li><a href="">Cooking</a></li>
+                  <li><a href="">Education</a></li>
+                  <li><a href="">Games</a></li>
+                  <li><a href="">Horror</a></li>
+                  <li><a href="">Mathematics</a></li>
+                  <li><a href="">Pets</a></li>
+                  <li><a href="">Thriller</a></li>
+                </ul>
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Biography</a></li>
+                  <li><a href="">Children Fiction</a></li>
+                  <li><a href="">Grafts & Hobbies</a></li>
+                  <li><a href="">Family and Relationships</a></li>
+                  <li><a href="">Gardening</a></li>
+                  <li><a href="">House & Home</a></li>
+                  <li><a href="">Medical</a></li>
+                  <li><a href="">Show others</a></li>
+                  <li><a href="">Uncategorized</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer category end  -->
 
-<!-- footer collapse link  -->
-<script src="./assets/js.for.footer/footer.js"></script>
+      <!-- footer top start  -->
+      <div id="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="booksore-icons col-12 col-md-12 col-lg-3">
+              <div class="img-logo">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-white.png"
+                  alt=""
+                />
+              </div>
+              <p class="text">
+                Bookland is a Book Store Ecommerce Website Template by
+                DexignZone lorem ipsum dolor sit
+              </p>
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="links col-4 col-md-3 col-lg-2">
+              <h5>Our Links</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">About Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Contact Us</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Pricing</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Faq's</a>
+                </li>
+              </ul>
+            </div>
+            <div class="links col-4 col-md-3 col-lg-2">
+              <h5>Bookland</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Shop</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Checkout</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Cart</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Wishlist</a>
+                </li>
+              </ul>
+            </div>
+            <div class="links col-4 col-md-3 col-lg-2">
+              <h5>Resources</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Home</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Features</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Blog Grid</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Help Desk</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">My Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts col-12 col-md-3 col-lg-3">
+              <h5>Get in Touch With Us</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>832 Thompson Drive, San Fransisco CA 94107,US</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+123 345123 556 <br />+123 345123 556</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>support@bookland.id <br />info@bookland.id</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer top end  -->
+      <!-- footer bottom start  -->
+      <div id="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="text-start col-lg-6 col-md-12">
+              <p class="copyright-text">
+                Bookland Book Store Ecommerce Website - © 2022 All Rights
+                Reserved
+              </p>
+            </div>
+            <div class="text-end col-lg-6 col-md-12">
+              <p class="copyright-text-end">
+                Made with <i class="fa-solid fa-heart"></i> by
+                <a href="">DexignZone</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom end  -->
+    </footer>
+    <!-- footer end  -->
+
+    <!-- js links -->
+
+    <script src="./assets/js/app.js"></script>
+
     <!-- swiper link -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/counter.js"></script>
- 
+    <!-- footer collapse link  -->
+    <script src="./assets/js/footer.js"></script>
   </body>
 </html>
