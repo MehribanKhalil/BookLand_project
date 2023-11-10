@@ -1,36 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- link bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- link fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- link bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <!-- link fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- link Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <!-- link css -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- link css -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
 
-    <title>Document</title>
-  </head>
-  <body>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="menu">
+        <div class="imgbox">
+          <img src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-4.png" alt="">
+        </div>
+        <form action="">
+          <div class="btn">
+            <button>Choose Category</button>
+            <ul class="category">
+              <li class="choosecategory">
+                <a href="">Choose Category</a>
+              </li>
+              <li>
+                <a href="">Action</a>
+              </li>
+              <li>
+                <a href="">Architecture</a>
+              </li>
+              <li>
+                <a href="">Art</a>
+              </li>
+              <li>
+                <a href="">Biography</a>
+              </li>
+              <li>
+                <a href="">Body,Mind & Spirit</a>
+              </li>
+              <li>
+                <a href="">Business</a>
+              </li>
+              <li>
+                <a href="">Business & Economics</a>
+              </li>
+              <li>
+                <a href="">Children Fiction</a>
+              </li>
+              <li>
+                <a href="">Children MFiction</a>
+              </li>
+              <li>
+                <a href="">Comics & Graphics</a>
+              </li>
+              <li>
+                <a href="">Cooking</a>
+              </li>
+              <li>
+                <a href="">Craft & Hobbies</a>
+              </li>
+              <li>
+                <a href="">Design</a>
+              </li>
+              <li>
+                <a href="">Drama</a>
+              </li>
+              <li>
+                <a href="">Education</a>
+              </li>
+              <li>
+                <a href="">Family & Relationships</a>
+              </li>
+              <li>
+                <a href="">Fiction</a>
+              </li>
+              <li>
+                <a href="">Foreign Languages</a>
+              </li>
+              <li>
+                <a href="">Games</a>
+              </li>
+              <li>
+                <a href="">Gardenings</a>
+              </li>
+              <li>
+                <a href="">Health & Fitness</a>
+              </li>
+              <li>
+                <a href="">History</a>
+              </li>
+              <li>
+                <a href="">Horror</a>
+              </li>
+              <li>
+                <a href="">Literary Collections</a>
+              </li>
+              <li>
+                <a href="">Mathematics</a>
+              </li>
+              <li>
+                <a href="">Medical</a>
+              </li>
+              <li>
+                <a href="">Nature</a>
+              </li>
+              <li>
+                <a href="">Performing Acts</a>
+              </li>
+              <li>
+                <a href="">Pets</a>
+              </li>
+              <li>
+                <a href="">Show Others</a>
+              </li>
+              <li>
+                <a href="">Sport</a>
+              </li>
+              <li>
+                <a href="">Strategy</a>
+              </li>
+              <li>
+                <a href="">Thriller</a>
+              </li>
+              <li>
+                <a href="">Uncategorized</a>
+              </li>
+            </ul>
+          </div>
+          <div class="input">
+            <input type="search" placeholder="Search Books Here">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form>
+        <ul class="images">
+          <li>
+            <a class="heart" href="">
+              <img src="https://img.icons8.com/sf-regular/48/hearts.png" alt="hearts" />
+              <span class="wishlist">0</span>
+            </a>
+          </li>
+          <li>
+            <a class="shopping-cart" href="">
+              <img src="https://img.icons8.com/sf-regular/48/shopping-cart.png" alt="shopping-cart" />
+              <span class="cardlist">0</span>
+              <div class="basket">
+                <div class="bottomside">
+                  <div class="subtotal">
+                    <strong>Subtotal:</strong>
+                    <span>0$</span>
+                  </div>
+                  <div class="btn">
+                    <button>VIEW CART</button>
+                    <button>CHECKOUT</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="img" href="">
+              <img src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/profile1.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="rightside">
+          <div class="getintouch">
+            <a href="">Get In Touch</a>
+          </div>
+          <div class="btnmenu">
+            <div>
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </div>
+          </div>
+        </div>
+        <div class="leftmodal">
+          <div class="imgbox">
+            <img src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-4.png" alt="">
+          </div>
+          <div class="input">
+            <input type="search" placeholder="Search Books Here">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="modal-list">
+            <li class="home">
+              <a href="">Home</a>
+              <div class="home-active">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="home-deactive">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </li>
+            <ul class="subhome">
+              <li>
+                <a href="">Home 1</a>
+              </li>
+              <li>
+                <a href="">Home 2</a>
+              </li>
+              <li>
+                <a href="">Home 3</a>
+              </li>
+              <li>
+                <a href="">Home 4</a>
+              </li>
+            </ul>
+            <li class="about">
+              <a href="">About Us</a>
+            </li>
+            <li class="pages">
+              <a href="">Pages</a>
+              <div class="pages-active">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="pages-deactive">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </li>
+            <ul class="subpages">
+              <li>
+                <a href="">Features</a>
+              </li>
+              <li>
+                <a href="">Faq's</a>
+              </li>
+              <li>
+                <a href="">Help Desk</a>
+              </li>
+              <li>
+                <a href="">Coming Soon</a>
+              </li>
+              <li>
+                <a href="">Pricing</a>
+              </li>
+              <li>
+                <a href="">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="">Under construction</a>
+              </li>
+              <li>
+                <a href="">Error 404</a>
+              </li>
+            </ul>
+            <li class="shop">
+              <a href="">Shop</a>
+              <div class="shop-active">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="shop-deactive">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </li>
+            <ul class="subshop">
+              <li>
+                <a href="">Shop</a>
+              </li>
+              <li>
+                <a href="">Shop Sidebar</a>
+              </li>
+              <li>
+                <a href="">Product Details</a>
+              </li>
+              <li>
+                <a href="">Cart</a>
+              </li>
+              <li>
+                <a href="">Checkout</a>
+              </li>
+              <li>
+                <a href="">My Account</a>
+              </li>
+            </ul>
+            <li class="blog">
+              <a href="">Blog</a>
+              <div class="blog-active">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="blog-deactive">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </li>
+            <ul class="subblog">
+              <li>
+                <a href="">Blog Grid</a>
+              </li>
+              <li>
+                <a href="">Blog Large Sidebar</a>
+              </li>
+              <li>
+                <a href="">Blog list Sidebar</a>
+              </li>
+              <li>
+                <a href="">Blog Details</a>
+              </li>
+            </ul>
+            <li class="contact">
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+          <div class="btn">
+            <button>Sign In</button>
+            <button>Sign Up</button>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="main-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="menu">
+            <ul>
+              <li class="home">
+                <a href="">Home</a>
+                <ul class="subhome">
+                  <li>
+                    <a href="">Home 1</a>
+                  </li>
+                  <li>
+                    <a href="">Home 2</a>
+                  </li>
+                  <li>
+                    <a href="">Home 3</a>
+                  </li>
+                  <li>
+                    <a href="">Home 4</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="about">
+                <a href="">About Us</a>
+              </li>
+              <li class="pages">
+                <a href="">Pages</a>
+                <ul class="subpages">
+                  <li>
+                    <a href="">Features</a>
+                  </li>
+                  <li>
+                    <a href="">Faq's</a>
+                  </li>
+                  <li>
+                    <a href="">Help Desk</a>
+                  </li>
+                  <li>
+                    <a href="">Coming Soon</a>
+                  </li>
+                  <li>
+                    <a href="">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="">Under construction</a>
+                  </li>
+                  <li>
+                    <a href="">Error 404</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="shop">
+                <a href="">Shop</a>
+                <ul class="subshop">
+                  <li>
+                    <a href="">Shop</a>
+                  </li>
+                  <li>
+                    <a href="">Shop Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="">Product Details</a>
+                  </li>
+                  <li>
+                    <a href="">Cart</a>
+                  </li>
+                  <li>
+                    <a href="">Checkout</a>
+                  </li>
+
+                  <li>
+                    <a href="">My Account</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blog">
+                <a href="">Blog</a>
+                <ul class="subblog">
+                  <li>
+                    <a href="">Blog Grid</a>
+                  </li>
+                  <li>
+                    <a href="">Blog Large Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="">Blog list Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="contact">
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+            <div class="btn">
+              <a href="">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-scroll">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="menu">
+            <ul>
+              <li class="home">
+                <a href="">Home</a>
+                <ul class="subhome">
+                  <li>
+                    <a href="">Home 1</a>
+                  </li>
+                  <li>
+                    <a href="">Home 2</a>
+                  </li>
+                  <li>
+                    <a href="">Home 3</a>
+                  </li>
+                  <li>
+                    <a href="">Home 4</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="about">
+                <a href="">About Us</a>
+              </li>
+              <li class="pages">
+                <a href="">Pages</a>
+                <ul class="subpages">
+                  <li>
+                    <a href="">Features</a>
+                  </li>
+                  <li>
+                    <a href="">Faq's</a>
+                  </li>
+                  <li>
+                    <a href="">Help Desk</a>
+                  </li>
+                  <li>
+                    <a href="">Coming Soon</a>
+                  </li>
+                  <li>
+                    <a href="">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="">Under construction</a>
+                  </li>
+                  <li>
+                    <a href="">Error 404</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="shop">
+                <a href="">Shop</a>
+                <ul class="subshop">
+                  <li>
+                    <a href="">Shop</a>
+                  </li>
+                  <li>
+                    <a href="">Shop Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="">Product Details</a>
+                  </li>
+                  <li>
+                    <a href="">Cart</a>
+                  </li>
+                  <li>
+                    <a href="">Checkout</a>
+                  </li>
+
+                  <li>
+                    <a href="">My Account</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="blog">
+                <a href="">Blog</a>
+                <ul class="subblog">
+                  <li>
+                    <a href="">Blog Grid</a>
+                  </li>
+                  <li>
+                    <a href="">Blog Large Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="">Blog list Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="contact">
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+            <div class="btn">
+              <a href="">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="back">
+    <a href="">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
+  <section>
+    <p>
+      odio voluptas maiores aliquid itaque inventore earum adipisci, dolorum sed. Eum consectetur voluptatem suscipit
+      itaque nihil dicta ad in debitis velit harum commodi unde repellat perspiciatis, maxime quia eveniet reiciendis
+      obcaecati odio amet hic, voluptates fugit provident cumque quos. Quis officia aliquid nihil cum molestias maiores
+      nam minima  rerum maiores. Harum laudantium reiciendis, provident, commodi quia
+      ducimus officiis fugit, ea explicabo cum voluptas dolorum consectetur saepe tempora? Ullam sint atque est fugit
+      eaque velit, repudiandae totam aliquid magni?
+    </p>
+  </section>
+
     <!-- main start -->
 
     <main>
@@ -280,12 +825,15 @@
     </main>
     <!-- main end -->  
 
-    <!-- js links -->
+  <!-- js links -->
+
+  <script src="./assets/js/app.js"></script>
 
     <!-- swiper link -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/counter.js"></script>
+ 
   </body>
 </html>
