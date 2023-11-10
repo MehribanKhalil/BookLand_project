@@ -1,0 +1,295 @@
+//our pricing section
+#pricing {
+    padding: 70px 0 40px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+
+    .textbox {
+        max-width: 750px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    .card {
+        padding: 35px 60px;
+        box-shadow: 1px 0 50px #0000001a;
+        bottom: 0;
+        transition: 0.8s;
+
+        &:hover {
+            background-color: $main-color;
+            bottom: 30px;
+        }
+        &:hover .icon{
+            background-color: rgba(255, 245, 232, .22);
+        }
+        &:hover .btn{
+            background-color: #fff;
+            color: $main-color;
+        }
+        &:hover .topcard .price h4{
+            color: #ffffff;
+        }
+        &:hover .topcard h3{
+            color: #ffffff;
+        }
+        &:hover .topcard p{
+            color: #ffffff;
+        }
+        &:hover .topcard .price span{
+            color: #ffffff;
+        }
+        &:hover h6{
+            color: #ffffff;
+        }
+        &:hover .icon i{
+            color: #ffffff;
+        }
+
+        .topcard {
+            text-align: center;
+            border-bottom: 1px solid #e3e3e3;
+
+            h3 {
+                font-weight: 600;
+                color: #000;
+            }
+
+            .price {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 16px 0;
+
+                h4 {
+                    font-size: 50px;
+                    color: $main-color;
+                    color: black;
+                    font-weight: 600;
+                    letter-spacing: -3px;
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 8px 0 0 6px;
+                    color: #1f2471;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: #979797;
+                line-height: 1.4;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .bottomcard {
+        text-align: center;
+        ul {
+            padding: 15px 0 15px;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 8px 0;
+                gap: 12px;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    background-color: #faeded;
+                    color: $main-color;
+                    i{
+                        font-size: 12px;
+                    }
+                }
+
+                h6 {
+                    color: #979797;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
+        }
+        .btn{
+            padding: 12px 20px;
+            background-color: $main-color;
+            color: #fff;
+            a{
+                font-size: 14px;
+            }
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #pricing{
+        .card{
+            padding: 35px 40px;
+            margin-bottom: 32px;
+        }
+    }
+}
+#pricing {
+    padding: 70px 0 40px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+
+    .textbox {
+        max-width: 750px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 36px;
+        }
+    }
+
+    .card {
+        padding: 35px 60px;
+        box-shadow: 1px 0 50px #0000001a;
+        bottom: 0;
+        transition: 0.8s;
+
+        &:hover {
+            background-color: $main-color;
+            bottom: 30px;
+        }
+        &:hover .icon{
+            background-color: rgba(255, 245, 232, .22);
+        }
+        &:hover .btn{
+            background-color: #fff;
+            color: $main-color;
+        }
+        &:hover .topcard .price h4{
+            color: #ffffff;
+        }
+        &:hover .topcard h3{
+            color: #ffffff;
+        }
+        &:hover .topcard p{
+            color: #ffffff;
+        }
+        &:hover .topcard .price span{
+            color: #ffffff;
+        }
+        &:hover h6{
+            color: #ffffff;
+        }
+        &:hover .icon i{
+            color: #ffffff;
+        }
+
+        .topcard {
+            text-align: center;
+            border-bottom: 1px solid #e3e3e3;
+
+            h3 {
+                font-weight: 600;
+                color: #000;
+            }
+
+            .price {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 16px 0;
+
+                h4 {
+                    font-size: 50px;
+                    color: $main-color;
+                    color: black;
+                    font-weight: 600;
+                    letter-spacing: -3px;
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin: 8px 0 0 6px;
+                    color: #1f2471;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: #979797;
+                line-height: 1.4;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .bottomcard {
+        text-align: center;
+        ul {
+            padding: 15px 0 15px;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 8px 0;
+                gap: 12px;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    background-color: #faeded;
+                    color: $main-color;
+                    i{
+                        font-size: 12px;
+                    }
+                }
+
+                h6 {
+                    color: #979797;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
+        }
+        .btn{
+            padding: 12px 20px;
+            background-color: $main-color;
+            color: #fff;
+            a{
+                font-size: 14px;
+            }
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #pricing{
+        .card{
+            padding: 35px 40px;
+            margin-bottom: 32px;
+        }
+    }
+}

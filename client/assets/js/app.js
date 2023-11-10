@@ -249,20 +249,13 @@ function scrollFunction() {
 
 // // back scroll etdikde top sehifeye getmek ucun
 const back = document.querySelector(".back")
-
-let scrolling = window.pageYOffset;
-
+back.style.transition = "0.5s"
 
 function backFunction() {
-    let currentScrollPos = window.pageYOffset;
-
-    if (scrolling > currentScrollPos) {
-
-        back.style.bottom = "10px";
-        back.style.opacity = "1";
-    } else {
-        back.style.bottom = "0px";
+    if (window.scrollY < 500) {
         back.style.opacity = "0";
     }
-    scrolling = currentScrollPos;
+    else {
+        back.style.opacity = "1";
+    }
 }
