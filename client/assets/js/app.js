@@ -259,3 +259,12 @@ function backFunction() {
         back.style.opacity = "1";
     }
 }
+
+
+//swiper
+
+let swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });

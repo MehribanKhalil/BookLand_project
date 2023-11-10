@@ -210,6 +210,7 @@ header {
                 transition: 0.5s;
                 overflow-y: scroll;
                 visibility: hidden;
+                z-index: 2;
                 .bottomside{
                     width: 100%;
                     padding: 16px;

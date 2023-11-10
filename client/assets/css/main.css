@@ -261,6 +261,7 @@ header .menu .images .basket {
   transition: 0.5s;
   overflow-y: scroll;
   visibility: hidden;
+  z-index: 2;
 }
 header .menu .images .basket .bottomside {
   width: 100%;
@@ -803,6 +804,7 @@ header .menu .modalactive {
   height: 80px;
   background-color: #ffffff;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 .main-nav .menu,
 .nav-scroll .menu {
@@ -1167,265 +1169,69 @@ header .menu .modalactive {
     display: none;
   }
 }
-#pricing {
+#bookonasale {
   padding: 70px 0 40px;
-  background-color: #f5f5f5;
-  min-height: 100vh;
-}
-#pricing .textbox {
-  max-width: 750px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-#pricing .textbox h2 {
-  font-size: 36px;
-}
-#pricing .card {
-  padding: 35px 60px;
-  box-shadow: 1px 0 50px rgba(0, 0, 0, 0.1019607843);
-  bottom: 0;
-  transition: 0.8s;
-}
-#pricing .card:hover {
-  background-color: #e5588d;
-  bottom: 30px;
-}
-#pricing .card:hover .icon {
-  background-color: rgba(255, 245, 232, 0.22);
-}
-#pricing .card:hover .btn {
   background-color: #fff;
-  color: #e5588d;
-}
-#pricing .card:hover .topcard .price h4 {
-  color: #ffffff;
-}
-#pricing .card:hover .topcard h3 {
-  color: #ffffff;
-}
-#pricing .card:hover .topcard p {
-  color: #ffffff;
-}
-#pricing .card:hover .topcard .price span {
-  color: #ffffff;
-}
-#pricing .card:hover h6 {
-  color: #ffffff;
-}
-#pricing .card:hover .icon i {
-  color: #ffffff;
-}
-#pricing .card .topcard {
-  text-align: center;
-  border-bottom: 1px solid #e3e3e3;
-}
-#pricing .card .topcard h3 {
-  font-weight: 600;
-  color: #000;
-}
-#pricing .card .topcard .price {
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 16px 0;
-}
-#pricing .card .topcard .price h4 {
-  font-size: 50px;
-  color: #e5588d;
-  color: black;
-  font-weight: 600;
-  letter-spacing: -3px;
-}
-#pricing .card .topcard .price span {
-  font-size: 15px;
-  font-weight: 700;
-  margin: 8px 0 0 6px;
-  color: #1f2471;
-  letter-spacing: -0.5px;
-}
-#pricing .card .topcard p {
-  font-size: 15px;
-  color: #979797;
-  line-height: 1.4;
-  width: 100%;
-  margin-bottom: 25px;
-}
-#pricing .bottomcard {
-  text-align: center;
-}
-#pricing .bottomcard ul {
-  padding: 15px 0 15px;
-}
-#pricing .bottomcard ul li {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  gap: 12px;
-}
-#pricing .bottomcard ul li .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: #faeded;
-  color: #e5588d;
-}
-#pricing .bottomcard ul li .icon i {
-  font-size: 12px;
-}
-#pricing .bottomcard ul li h6 {
-  color: #979797;
-  font-weight: 400;
-  margin: 0;
-}
-#pricing .bottomcard .btn {
-  padding: 12px 20px;
-  background-color: #e5588d;
-  color: #fff;
-}
-#pricing .bottomcard .btn a {
-  font-size: 14px;
-}
-#pricing .bottomcard .btn i {
-  font-size: 12px;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 1200px) {
-  #pricing .card {
-    padding: 35px 40px;
-    margin-bottom: 32px;
-  }
-}
-#pricing {
-  padding: 70px 0 40px;
-  background-color: #f5f5f5;
-  min-height: 100vh;
-}
-#pricing .textbox {
-  max-width: 750px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-#pricing .textbox h2 {
-  font-size: 36px;
-}
-#pricing .card {
-  padding: 35px 60px;
-  box-shadow: 1px 0 50px rgba(0, 0, 0, 0.1019607843);
-  bottom: 0;
-  transition: 0.8s;
-}
-#pricing .card:hover {
-  background-color: #e5588d;
-  bottom: 30px;
-}
-#pricing .card:hover .icon {
-  background-color: rgba(255, 245, 232, 0.22);
-}
-#pricing .card:hover .btn {
-  background-color: #fff;
-  color: #e5588d;
-}
-#pricing .card:hover .topcard .price h4 {
-  color: #ffffff;
-}
-#pricing .card:hover .topcard h3 {
-  color: #ffffff;
-}
-#pricing .card:hover .topcard p {
-  color: #ffffff;
-}
-#pricing .card:hover .topcard .price span {
-  color: #ffffff;
-}
-#pricing .card:hover h6 {
-  color: #ffffff;
-}
-#pricing .card:hover .icon i {
-  color: #ffffff;
-}
-#pricing .card .topcard {
-  text-align: center;
-  border-bottom: 1px solid #e3e3e3;
-}
-#pricing .card .topcard h3 {
-  font-weight: 600;
-  color: #000;
-}
-#pricing .card .topcard .price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 16px 0;
-}
-#pricing .card .topcard .price h4 {
-  font-size: 50px;
-  color: #e5588d;
-  color: black;
-  font-weight: 600;
-  letter-spacing: -3px;
-}
-#pricing .card .topcard .price span {
-  font-size: 15px;
-  font-weight: 700;
-  margin: 8px 0 0 6px;
-  color: #1f2471;
-  letter-spacing: -0.5px;
-}
-#pricing .card .topcard p {
-  font-size: 15px;
-  color: #979797;
-  line-height: 1.4;
-  width: 100%;
-  margin-bottom: 25px;
-}
-#pricing .bottomcard {
-  text-align: center;
-}
-#pricing .bottomcard ul {
-  padding: 15px 0 15px;
-}
-#pricing .bottomcard ul li {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  gap: 12px;
-}
-#pricing .bottomcard ul li .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: #faeded;
-  color: #e5588d;
-}
-#pricing .bottomcard ul li .icon i {
-  font-size: 12px;
-}
-#pricing .bottomcard ul li h6 {
-  color: #979797;
-  font-weight: 400;
-  margin: 0;
-}
-#pricing .bottomcard .btn {
-  padding: 12px 20px;
-  background-color: #e5588d;
-  color: #fff;
-}
-#pricing .bottomcard .btn a {
-  font-size: 14px;
-}
-#pricing .bottomcard .btn i {
-  font-size: 12px;
+.imgbox {
+  width: 200px;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1200px) {
-  #pricing .card {
-    padding: 35px 40px;
-    margin-bottom: 32px;
-  }
+ul {
+  display: flex;
+  gap: 10px;
+}
+ul li {
+  color: #e5588d;
+}
+
+.rate-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.rate-price .rate {
+  display: flex;
+  align-items: center;
+}
+.rate-price .rate i {
+  color: #e5588d;
+}
+.rate-price .price del {
+  font-size: 14px;
+  margin-right: 4px;
+  color: #555555;
+}
+.rate-price .price .pricing {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e5588d;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
