@@ -169,6 +169,27 @@
     gap: 8px;
     
 }
+.add-to-card:hover i{
+  animation: fadeInDown 0.5s;
+color: #fff;
+    
+}
+.add-to-card:hover{
+  background-color: #110e47;
+}
+
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
            }
 
         }
