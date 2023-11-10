@@ -57,9 +57,7 @@
     text-align: center;
     margin-bottom: 40px;
     p{
-      max-width: 753px;
-      margin-left: auto;
-      margin-right: auto;
+     
       font-size: 16px;
       line-height: 1.5;
       font-weight: 400;
@@ -115,6 +113,143 @@
      transition: all 0.3s;
         }
   }
+
+
+// what customers said section start  
+#customers{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: rgb(245, 245, 245);
+  .testimonial{
+    .section-head{
+      max-width: 700px;
+      margin: 0 auto 40px;
+         text-align: center;
+      .testimonial-text{
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+      }   
+    }
+  }
+  .swipper-container{
+    .customers-review{
+      display: flex;
+      align-items: center;
+      .customers-img{
+        img{
+          border-radius: 6px;
+        }
+        
+      }
+      .customers-info{
+        .info{
+          font-size: 18px;
+    font-style: italic;
+        }
+        .details{
+          margin-top: 10px;
+          padding: 5px; 
+    position: relative;
+          .fa-quote-right{
+        color: $main-color;
+        position: absolute;
+
+        z-index: 1;
+        font-size: 105px;
+        bottom: 0;
+        right: 20px;
+      }
+         .customers-name-position{
+          margin-bottom: 5px;
+          margin-top: 10px;
+          .possition{
+          font-size: 15px;
+         }
+         } 
+         .raiting{
+          display: flex;
+            align-items: center;
+            margin-top: 20px;
+            line-height: 1;
+          .raiting-star{
+            display: flex;
+
+          }
+          .rate{
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 20px;
+            margin-left: 15px;
+            color: #071c35;
+          }
+         }
+         
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen  and (max-width:992px){
+  #customers{
+    .testimonial{
+      .section-head{
+        .testimonial-text{
+          display: none;
+        }   
+      }
+    }
+    .swipper-container{
+      .customers-review{
+        align-items: flex-start;
+        .customers-info{
+          .info{
+           
+            font-size: 15px;
+            
+          }
+          .details{
+            .fa-quote-right{
+          font-size: 40px;
+        }
+                    .customers-name-position{
+               .name{
+                font-size: 14px;
+               }
+              .possition{
+                font-size: 14px;
+              } 
+              
+            }
+           
+          }
+      }
+    }
+    }}
+}
+@media screen  and (max-width:768px){
+  #customers{
+    .testimonial{
+      .section-head{
+        .testimonial-text{
+          display: none;
+        }   
+      }
+    }
+    .swipper-container{
+      .customers-review{
+        .customers-info{
+          .info{
+            margin-top: 20px;
+          }
+          }
+      }
+    }
+    }}
+
 
 //   cards 
 

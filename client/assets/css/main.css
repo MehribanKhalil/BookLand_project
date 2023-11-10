@@ -310,9 +310,6 @@ p {
   margin-bottom: 40px;
 }
 #our-mission .section-head p {
-  max-width: 753px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -362,6 +359,97 @@ p {
   transition: all 0.3s;
 }
 
+#customers {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: rgb(245, 245, 245);
+}
+#customers .testimonial .section-head {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+#customers .testimonial .section-head .testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#customers .swipper-container .customers-review {
+  display: flex;
+  align-items: center;
+}
+#customers .swipper-container .customers-review .customers-img img {
+  border-radius: 6px;
+}
+#customers .swipper-container .customers-review .customers-info .info {
+  font-size: 18px;
+  font-style: italic;
+}
+#customers .swipper-container .customers-review .customers-info .details {
+  margin-top: 10px;
+  padding: 5px;
+  position: relative;
+}
+#customers .swipper-container .customers-review .customers-info .details .fa-quote-right {
+  color: #e5588d;
+  position: absolute;
+  z-index: 1;
+  font-size: 105px;
+  bottom: 0;
+  right: 20px;
+}
+#customers .swipper-container .customers-review .customers-info .details .customers-name-position {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+#customers .swipper-container .customers-review .customers-info .details .customers-name-position .possition {
+  font-size: 15px;
+}
+#customers .swipper-container .customers-review .customers-info .details .raiting {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  line-height: 1;
+}
+#customers .swipper-container .customers-review .customers-info .details .raiting .raiting-star {
+  display: flex;
+}
+#customers .swipper-container .customers-review .customers-info .details .raiting .rate {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 15px;
+  color: #071c35;
+}
+
+@media screen and (max-width: 992px) {
+  #customers .testimonial .section-head .testimonial-text {
+    display: none;
+  }
+  #customers .swipper-container .customers-review {
+    align-items: flex-start;
+  }
+  #customers .swipper-container .customers-review .customers-info .info {
+    font-size: 15px;
+  }
+  #customers .swipper-container .customers-review .customers-info .details .fa-quote-right {
+    font-size: 40px;
+  }
+  #customers .swipper-container .customers-review .customers-info .details .customers-name-position .name {
+    font-size: 14px;
+  }
+  #customers .swipper-container .customers-review .customers-info .details .customers-name-position .possition {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #customers .testimonial .section-head .testimonial-text {
+    display: none;
+  }
+  #customers .swipper-container .customers-review .customers-info .info {
+    margin-top: 20px;
+  }
+}
 .swiper-card {
   display: flex;
   justify-content: center;
