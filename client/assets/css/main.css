@@ -450,6 +450,74 @@ p {
     margin-top: 20px;
   }
 }
+#special-offers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#special-offers .special-head {
+  padding-bottom: 40px;
+}
+#special-offers .swiper-container .special-book-card .spesial-img img {
+  border-radius: 6px 6px 0 0;
+}
+#special-offers .swiper-container .special-book-card .special-info {
+  border: 1px solid #f0f0f0;
+  padding: 33px 32px 30px;
+  border-radius: 0 0 6px 6px;
+}
+#special-offers .swiper-container .special-book-card .special-info h4 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#special-offers .swiper-container .special-book-card .special-info .special-category {
+  padding: 10px 0px;
+}
+#special-offers .swiper-container .special-book-card .special-info .special-category a {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 8px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  color: #192436;
+  transition: all 0.8s;
+}
+#special-offers .swiper-container .special-book-card .special-info .special-category a:hover {
+  background-color: #e5588d;
+  color: white;
+  transition: all 0.8s;
+}
+#special-offers .swiper-container .special-book-card .special-info p {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+#special-offers .swiper-container .special-book-card .special-info .book-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#special-offers .swiper-container .special-book-card .special-info .book-card-footer .add-to-card {
+  font-size: 14px;
+  padding: 12.5px 20px;
+  line-height: 1.5;
+  display: inline-flex;
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s;
+  justify-content: center;
+  color: #fff;
+  background-color: #e5588d;
+  gap: 10px;
+}
+#special-offers .swiper-container .special-book-card .special-info .book-card-footer .price-details span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #e5588d;
+}
+
 .swiper-card {
   display: flex;
   justify-content: center;
