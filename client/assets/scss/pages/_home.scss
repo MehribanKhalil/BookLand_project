@@ -1,71 +1,82 @@
-// content inner start
+// content inner start with shake 
 #content-inner {
-    padding-top: 70px;
-    padding-bottom: 40px;
-    .card-inner {
-      margin-bottom: 20px;
-      text-align: center;
-      .icon-center {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  .card-inner {
+    margin-bottom: 20px;
+    text-align: center;
+    .icon-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 31px;
+        border-radius: 6px;
+        background-color: rgba(229, 88, 141, 0.1);
         display: flex;
         justify-content: center;
         align-items: center;
-  
-        .icon {
-          width: 60px;
-          height: 60px;
-          margin-bottom: 31px;
-          border-radius: 6px;
-          background-color: rgba(229, 88, 141, 0.1);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: all 0.7s;
-          i {
-            font-size: 26px;
-            color: $main-color;
-          }
+        transition: all 0.7s;
+        i {
+          font-size: 26px;
+          color: $main-color;
         }
       }
-      h5{
-          font-size: 20px;
-      }
     }
-    .card-inner:hover .icon {
-     background-color: $main-color;
-     transition: all 0.9s;
-    } 
-    .card-inner:hover i {
-      animation: shake 0.5s;
-      color: white !important;
-    }
-    
-    @keyframes shake {
-      0% { transform: translateX(0); }
-      20% { transform: translateX(-5px) rotate(3deg); }
-      40% { transform: translateX(5px) rotate(-3deg); }
-      60% { transform: translateX(-5px) rotate(3deg); }
-      80% { transform: translateX(5px) rotate(-3deg); }
-      100% { transform: translateX(0); }
+    h5 {
+      font-size: 20px;
     }
   }
-  // our-mission start 
-  #our-mission{
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: rgba(245,245,245,1);
-  .section-head{
+  .card-inner:hover .icon {
+    background-color: $main-color;
+    transition: all 0.9s;
+  }
+  .card-inner:hover i {
+    animation: shake 0.5s;
+    color: white !important;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-5px) rotate(3deg);
+    }
+    40% {
+      transform: translateX(5px) rotate(-3deg);
+    }
+    60% {
+      transform: translateX(-5px) rotate(3deg);
+    }
+    80% {
+      transform: translateX(5px) rotate(-3deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+// our-mission start
+#our-mission {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(245, 245, 245, 1);
+  .section-head {
     text-align: center;
     margin-bottom: 40px;
-    p{
-     
+    p {
       font-size: 16px;
       line-height: 1.5;
       font-weight: 400;
     }
   }
-  .mission-card{
+  .mission-card {
     margin-bottom: 20px;
-    .content-mission{
+    .content-mission {
       box-shadow: rgba(0, 0, 0, 0.1) 1px 1.732px 60px 0px;
       background-color: rgb(255, 255, 255);
       padding: 45px;
@@ -75,335 +86,441 @@
       border-color: transparent;
       border-image: initial;
       transition: all 0.8s ease 0s;
-    
-      .icon{
-        i{
+
+      .icon {
+        i {
           color: rgb(26, 22, 104);
           margin-bottom: 30px;
           vertical-align: middle;
-      font-size: 60px;
-      transition: all 0.3s;
+          font-size: 60px;
+          transition: all 0.3s;
         }
       }
-      .content-text{
+      .content-text {
         overflow: hidden;
-        h4{
+        h4 {
           font-size: 22px;
           margin-bottom: 15px;
         }
-        p{
+        p {
           margin-bottom: 20px;
         }
-        a{
+        a {
           font-size: 18px;
           font-weight: 600;
           color: $main-color;
         }
-  
       }
     }
-    
   }
-  .content-mission:hover{
-  border: 2px solid $main-color;
-  transform: translateY(-20px);
-    }
-    .content-mission:hover  i{
-     color: $main-color !important;
-     transition: all 0.3s;
-        }
+  .content-mission:hover {
+    border: 2px solid $main-color;
+    transform: translateY(-20px);
   }
+  .content-mission:hover i {
+    color: $main-color !important;
+    transition: all 0.3s;
+  }
+}
 
-
-// what customers said section start  
-#customers{
+// what customers said section start
+#customers {
   padding-top: 70px;
   padding-bottom: 40px;
   background-color: rgb(245, 245, 245);
-  .testimonial{
-    .section-head{
+  .testimonial {
+    .section-head {
       max-width: 700px;
       margin: 0 auto 40px;
-         text-align: center;
-      .testimonial-text{
+      text-align: center;
+      .testimonial-text {
         font-size: 16px;
         line-height: 1.5;
         font-weight: 400;
-      }   
+      }
     }
   }
-  .swipper-container{
-    .customers-review{
+  .swipper-container {
+    .customers-review {
       display: flex;
       align-items: center;
-      .customers-img{
-        img{
+      .customers-img {
+        img {
           border-radius: 6px;
         }
-        
       }
-      .customers-info{
-        .info{
+      .customers-info {
+        .info {
           font-size: 18px;
-    font-style: italic;
+          font-style: italic;
         }
-        .details{
+        .details {
           margin-top: 10px;
-          padding: 5px; 
-    position: relative;
-          .fa-quote-right{
-        color: $main-color;
-        position: absolute;
+          padding: 5px;
+          position: relative;
+          .fa-quote-right {
+            color: $main-color;
+            position: absolute;
 
-        z-index: 1;
-        font-size: 105px;
-        bottom: 0;
-        right: 20px;
-      }
-         .customers-name-position{
-          margin-bottom: 5px;
-          margin-top: 10px;
-          .possition{
-          font-size: 15px;
-         }
-         } 
-         .raiting{
-          display: flex;
+            z-index: 1;
+            font-size: 105px;
+            bottom: 0;
+            right: 20px;
+          }
+          .customers-name-position {
+            margin-bottom: 5px;
+            margin-top: 10px;
+            .possition {
+              font-size: 15px;
+            }
+          }
+          .raiting {
+            display: flex;
             align-items: center;
             margin-top: 20px;
             line-height: 1;
-          .raiting-star{
-            display: flex;
-
+            .raiting-star {
+              display: flex;
+            }
+            .rate {
+              font-family: Poppins;
+              font-weight: 600;
+              font-size: 20px;
+              margin-left: 15px;
+              color: #071c35;
+            }
           }
-          .rate{
-            font-family: Poppins;
-            font-weight: 600;
-            font-size: 20px;
-            margin-left: 15px;
-            color: #071c35;
-          }
-         }
-         
         }
       }
     }
   }
 }
-
-
-
-@media screen  and (max-width:992px){
-  #customers{
-    .testimonial{
-      .section-head{
-        .testimonial-text{
+// what customers said media 
+@media screen and (max-width: 992px) {
+  #customers {
+    .testimonial {
+      .section-head {
+        .testimonial-text {
           display: none;
-        }   
-      }
-    }
-    .swipper-container{
-      .customers-review{
-        align-items: flex-start;
-        .customers-info{
-          .info{
-           
-            font-size: 15px;
-            
-          }
-          .details{
-            .fa-quote-right{
-          font-size: 40px;
         }
-                    .customers-name-position{
-               .namer{
-                font-size: 14px;
-               }
-              .possition{
-                font-size: 14px;
-              } 
-              
-            }
-           
+      }
+    }
+    .swipper-container {
+      .customers-review {
+        align-items: flex-start;
+        .customers-info {
+          .info {
+            font-size: 15px;
           }
+          .details {
+            .fa-quote-right {
+              font-size: 40px;
+            }
+            .customers-name-position {
+              .namer {
+                font-size: 14px;
+              }
+              .possition {
+                font-size: 14px;
+              }
+            }
+          }
+        }
       }
     }
-    }}
+  }
 }
-@media screen  and (max-width:768px){
-  #customers{
-    .testimonial{
-      .section-head{
-        .testimonial-text{
+// what customers said media 
+@media screen and (max-width: 768px) {
+  #customers {
+    .testimonial {
+      .section-head {
+        .testimonial-text {
           display: none;
-        }   
+        }
       }
     }
-    .swipper-container{
-      .customers-review{
-        .customers-info{
-          .info{
+    .swipper-container {
+      .customers-review {
+        .customers-info {
+          .info {
             margin-top: 20px;
           }
-          }
+        }
       }
     }
-    }}
+  }
+}
 
- // special offers section start 
- #special-offers{
+// special offers section start
+#special-offers {
   padding-top: 60px;
   padding-bottom: 60px;
-  .special-head{
-padding-bottom: 40px;
+  .special-head {
+    padding-bottom: 40px;
   }
-  .swiper-container{
-    .special-book-card{
-      .spesial-img{
-        img{
-          border-radius:6px 6px 0 0;
+  .swiper-container {
+    .special-book-card {
+      .spesial-img {
+        img {
+          border-radius: 6px 6px 0 0;
         }
-      }.special-info{
-          border: 1px solid #f0f0f0;
-          padding: 33px 32px 30px;
-          border-radius: 0 0 6px 6px;
-          h4{
-            margin-bottom: 5px;
+      }
+      .special-info {
+        border: 1px solid #f0f0f0;
+        padding: 33px 32px 30px;
+        border-radius: 0 0 6px 6px;
+        h4 {
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+        .special-category {
+          padding: 10px 0px;
+          a {
+            width: 200px;
+            font-size: 16px;
             font-weight: 600;
+            padding: 4px 8px;
+            background-color: #f2f2f2;
+            border-radius: 6px;
+            color: #192436;
+            transition: all 0.8s;
           }
-          .special-category{
-           padding: 10px 0px;
-              a{
-             width: 200px;
-                font-size: 16px;
-    font-weight: 600;
-    padding: 4px 8px;
-    background-color: #f2f2f2;
-    border-radius:6px;
-    color: #192436;
-transition: all 0.8s;
-              }
-            a:hover {
-background-color: $main-color;
-color: white;
-transition: all 0.8s;
-            }
-            
+          a:hover {
+            background-color: $main-color;
+            color: white;
+            transition: all 0.8s;
           }
-          p{
-            margin-top: 10px;
-            margin-bottom: 1rem;
-          }
-         .book-card-footer{
+        }
+        p {
+          margin-top: 10px;
+          margin-bottom: 1rem;
+        }
+        .book-card-footer {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          .add-to-card{
+          .add-to-card {
             font-size: 14px;
-    padding: 12.5px 20px;
-    line-height: 1.5;
-    display: inline-flex;
-    border-radius:6px;
-    font-weight: 500;
-    text-transform: capitalize;
-    align-items: center;
-    text-align: center;
-    transition: all .2s;
-    justify-content: center;
-    color: #fff;
-    background-color: $main-color;
-    gap: 10px;
-          }
-          .price-details{
-            span{
-              font-size: 24px;
-          font-weight: 600;
-          color: $main-color;
-            }
-            
-          }
-          
-         } 
-        }
-    }
-  }
- }
-
-//   cards 
-
-.swiper-card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    .book-card{
-        
-        .img-book{
-            img{
-                max-width: 100%;
-                border-radius: 6px;
-            }
-        }
-        .content-book{
+            padding: 12.5px 20px;
+            line-height: 1.5;
+            display: inline-flex;
+            border-radius: 6px;
+            font-weight: 500;
+            text-transform: capitalize;
+            align-items: center;
             text-align: center;
-            margin-top: 10px;
-            h4{
-                 line-height: 1.4;
-            font-weight: 600;
-            font-size: 1.25rem;
+            transition: all 0.2s;
+            justify-content: center;
+            color: #fff;
+            background-color: $main-color;
+            gap: 10px;
+          }
+          .price-details {
+            span {
+              font-size: 24px;
+              font-weight: 600;
+              color: $main-color;
             }
-           .price{
-            color: $main-color;
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    del{
-        font-size: 16px;
-        font-weight: 400;
-        color: #666;
-        opacity: .9;    
-    }
-           }
-           .add-to-card{
-            font-size: 14px;
-    padding: 12.5px 20px;
-    line-height: 1.5;
-    display: inline-flex;
-    border-radius:6px;
-    font-weight: 500;
-    text-transform: capitalize;
-    align-items: center;
-    text-align: center;
-    transition: all .2s;
-    justify-content: center;
-    color: #fff;
-    background-color: #1a1668;
-    gap: 8px;
-    
-}
-.add-to-card:hover i{
-  animation: fadeInDown 0.5s;
-color: #fff;
-    
-}
-.add-to-card:hover{
-  background-color: #110e47;
-}
-
-
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-           }
-
+          }
         }
-    } 
+      }
+    }
+  }
+}
+
+// paralax email section start
+#paralax-section{
+  background-image: url("https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/bg1.jpg");
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+    // background-attachment: fixed;
+
+  .background-paralax{
+    border-radius: 20px;
+    margin: 60px 0px;
+    background-color: $secondary-color;
+    background-position: center;
+    opacity: 0.8;
+    .content{
+      align-items: center;
+      padding-top: 50px;
+      padding-bottom:50px ;
+          .title-paralax{
+      h2{
+        color: white;
+      }
+  }
+  .email-form{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 72px;
+      border: 1px solid #fff;
+      border-radius: 10px   ;
+    input{
+      outline: none;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+    }
+    ::placeholder{
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .btn-sub{
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 60px;
+        width: 120px;
+      background-color: $main-color;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+      text-align: center;
+font-size: 14px;
+color: white;
+      }}
+      .btn-tele{
+        display: none;
+      }
+    }
+  }
+    }
+
+  }
+  
+
+@media screen and (max-width:1500px) {
+  #paralax-section{
+  max-width: 100%;
+  border-radius: 0px;
+  .background-paralax{
+    border-radius: 0px;
+    margin-bottom: 0px;
+  }
+
+    }
+}
+@media screen and (max-width:1000px) {
+  #paralax-section{
+  .background-paralax{
+    .content{
+      text-align: center;
+    }
+  }
+    }
+}
+@media screen and (max-width:568px) {
+  #paralax-section{
+  .background-paralax{
+    .content{
+      .email-form{
+        .btn-sub{
+          display: none;
+        }
+        .btn-tele{
+          display: block;
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 50px;
+            width: 50px;
+          background-color: $main-color;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i{
+            font-size: 30px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+    }
+}
+// paralax email section end
+
+//   cards
+
+.swiper-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .book-card {
+    .img-book {
+      img {
+        max-width: 100%;
+        border-radius: 6px;
+      }
+    }
+    .content-book {
+      text-align: center;
+      margin-top: 10px;
+      h4 {
+        line-height: 1.4;
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+      .price {
+        color: $main-color;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        del {
+          font-size: 16px;
+          font-weight: 400;
+          color: #666;
+          opacity: 0.9;
+        }
+      }
+      .add-to-card {
+        font-size: 14px;
+        padding: 12.5px 20px;
+        line-height: 1.5;
+        display: inline-flex;
+        border-radius: 6px;
+        font-weight: 500;
+        text-transform: capitalize;
+        align-items: center;
+        text-align: center;
+        transition: all 0.2s;
+        justify-content: center;
+        color: #fff;
+        background-color: #1a1668;
+        gap: 8px;
+      }
+      .add-to-card:hover i {
+        animation: fadeInDown 0.5s;
+        color: #fff;
+      }
+      .add-to-card:hover {
+        background-color: #110e47;
+      }
+
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+}

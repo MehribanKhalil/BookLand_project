@@ -518,6 +518,108 @@ p {
   color: #e5588d;
 }
 
+#paralax-section {
+  background-image: url("https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/bg1.jpg");
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+#paralax-section .background-paralax {
+  border-radius: 20px;
+  margin: 60px 0px;
+  background-color: #192436;
+  background-position: center;
+  opacity: 0.8;
+}
+#paralax-section .background-paralax .content {
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#paralax-section .background-paralax .content .title-paralax h2 {
+  color: white;
+}
+#paralax-section .background-paralax .content .email-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 72px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+#paralax-section .background-paralax .content .email-form input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+#paralax-section .background-paralax .content .email-form ::placeholder {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#paralax-section .background-paralax .content .email-form .btn-sub {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;
+  width: 120px;
+  background-color: #e5588d;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#paralax-section .background-paralax .content .email-form .btn-sub a {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+#paralax-section .background-paralax .content .email-form .btn-tele {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  #paralax-section {
+    max-width: 100%;
+    border-radius: 0px;
+  }
+  #paralax-section .background-paralax {
+    border-radius: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #paralax-section .background-paralax .content {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 568px) {
+  #paralax-section .background-paralax .content .email-form .btn-sub {
+    display: none;
+  }
+  #paralax-section .background-paralax .content .email-form .btn-tele {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    background-color: #e5588d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #paralax-section .background-paralax .content .email-form .btn-tele i {
+    font-size: 30px;
+    color: white;
+  }
+}
 .swiper-card {
   display: flex;
   justify-content: center;
