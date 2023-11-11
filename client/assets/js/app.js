@@ -217,7 +217,7 @@ blog.addEventListener("click", function (e) {
 const shoppingCart = document.querySelector(".shopping-cart")
 const basket = document.querySelector(".basket")
 
-shoppingCart.addEventListener("click",function (e) {
+shoppingCart.addEventListener("click", function (e) {
     e.preventDefault()
     basket.classList.toggle("basketactive")
 })
@@ -231,8 +231,8 @@ window.onscroll = function () {
     scrollFunction()
     backFunction()
 };
-function scrollFunction() {   
-     if (window.scrollY < 150) {
+function scrollFunction() {
+    if (window.scrollY < 150) {
         navScroll.style.height = "0px"
         navScroll.style.top = "-80px"
         navScroll.style.overflow = "hidden"
@@ -263,8 +263,16 @@ function backFunction() {
 
 //swiper
 
-let swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".saleBookSwiper", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
     pagination: {
-      el: ".swiper-pagination",
+        el: ".swiper-pagination",
+        clickable: false,
     },
-  });
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
