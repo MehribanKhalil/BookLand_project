@@ -1215,6 +1215,12 @@ ul li {
   color: #e5588d;
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -1227,6 +1233,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .swiper-slide img {
