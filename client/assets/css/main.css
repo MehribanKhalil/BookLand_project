@@ -1699,9 +1699,7 @@ header .menu .modalactive {
   margin-bottom: 40px;
 }
 #our-mission .section-head p {
-  max-width: 753px;
-  margin-left: auto;
-  margin-right: auto;
+
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -1825,5 +1823,332 @@ header .menu .modalactive {
   }
   #recomended_books .container_books i {
     display: none;
+  }
+}
+
+#customers {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: rgb(245, 245, 245);
+}
+#customers .testimonial .section-head {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+#customers .testimonial .section-head .testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+#customers .swipper-container .customers-review {
+  display: flex;
+  align-items: center;
+}
+#customers .swipper-container .customers-review .customers-img img {
+  border-radius: 6px;
+}
+#customers .swipper-container .customers-review .customers-info .info {
+  font-size: 18px;
+  font-style: italic;
+}
+#customers .swipper-container .customers-review .customers-info .details {
+  margin-top: 10px;
+  padding: 5px;
+  position: relative;
+}
+#customers .swipper-container .customers-review .customers-info .details .fa-quote-right {
+  color: #e5588d;
+  position: absolute;
+  z-index: 1;
+  font-size: 105px;
+  bottom: 0;
+  right: 20px;
+}
+#customers .swipper-container .customers-review .customers-info .details .customers-name-position {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+#customers .swipper-container .customers-review .customers-info .details .customers-name-position .possition {
+  font-size: 15px;
+}
+#customers .swipper-container .customers-review .customers-info .details .raiting {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  line-height: 1;
+}
+#customers .swipper-container .customers-review .customers-info .details .raiting .raiting-star {
+  display: flex;
+}
+#customers .swipper-container .customers-review .customers-info .details .raiting .rate {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 15px;
+  color: #071c35;
+}
+
+@media screen and (max-width: 992px) {
+  #customers .testimonial .section-head .testimonial-text {
+    display: none;
+  }
+  #customers .swipper-container .customers-review {
+    align-items: flex-start;
+  }
+  #customers .swipper-container .customers-review .customers-info .info {
+    font-size: 15px;
+  }
+  #customers .swipper-container .customers-review .customers-info .details .fa-quote-right {
+    font-size: 40px;
+  }
+  #customers .swipper-container .customers-review .customers-info .details .customers-name-position .namer {
+    font-size: 14px;
+  }
+  #customers .swipper-container .customers-review .customers-info .details .customers-name-position .possition {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #customers .testimonial .section-head .testimonial-text {
+    display: none;
+  }
+  #customers .swipper-container .customers-review .customers-info .info {
+    margin-top: 20px;
+  }
+}
+#special-offers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#special-offers .special-head {
+  padding-bottom: 40px;
+}
+#special-offers .swiper-container .special-book-card .spesial-img img {
+  border-radius: 6px 6px 0 0;
+}
+#special-offers .swiper-container .special-book-card .special-info {
+  border: 1px solid #f0f0f0;
+  padding: 33px 32px 30px;
+  border-radius: 0 0 6px 6px;
+}
+#special-offers .swiper-container .special-book-card .special-info h4 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#special-offers .swiper-container .special-book-card .special-info .special-category {
+  padding: 10px 0px;
+}
+#special-offers .swiper-container .special-book-card .special-info .special-category a {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 8px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  color: #192436;
+  transition: all 0.8s;
+}
+#special-offers .swiper-container .special-book-card .special-info .special-category a:hover {
+  background-color: #e5588d;
+  color: white;
+  transition: all 0.8s;
+}
+#special-offers .swiper-container .special-book-card .special-info p {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+#special-offers .swiper-container .special-book-card .special-info .book-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#special-offers .swiper-container .special-book-card .special-info .book-card-footer .add-to-card {
+  font-size: 14px;
+  padding: 12.5px 20px;
+  line-height: 1.5;
+  display: inline-flex;
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s;
+  justify-content: center;
+  color: #fff;
+  background-color: #e5588d;
+  gap: 10px;
+}
+#special-offers .swiper-container .special-book-card .special-info .book-card-footer .price-details span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #e5588d;
+}
+
+#paralax-section {
+  background-image: url("https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/bg1.jpg");
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+#paralax-section .background-paralax {
+  border-radius: 20px;
+  margin: 60px 0px;
+  background-color: #192436;
+  background-position: center;
+  opacity: 0.8;
+}
+#paralax-section .background-paralax .content {
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#paralax-section .background-paralax .content .title-paralax h2 {
+  color: white;
+}
+#paralax-section .background-paralax .content .email-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 72px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+#paralax-section .background-paralax .content .email-form input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+#paralax-section .background-paralax .content .email-form ::placeholder {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#paralax-section .background-paralax .content .email-form .btn-sub {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;
+  width: 120px;
+  background-color: #e5588d;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#paralax-section .background-paralax .content .email-form .btn-sub a {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+#paralax-section .background-paralax .content .email-form .btn-tele {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  #paralax-section {
+    max-width: 100%;
+    border-radius: 0px;
+  }
+  #paralax-section .background-paralax {
+    border-radius: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #paralax-section .background-paralax .content {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 568px) {
+  #paralax-section .background-paralax .content .email-form .btn-sub {
+    display: none;
+  }
+  #paralax-section .background-paralax .content .email-form .btn-tele {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    background-color: #e5588d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #paralax-section .background-paralax .content .email-form .btn-tele i {
+    font-size: 30px;
+    color: white;
+  }
+}
+.swiper-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.swiper-card .book-card .img-book img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.swiper-card .book-card .content-book {
+  text-align: center;
+  margin-top: 10px;
+}
+.swiper-card .book-card .content-book h4 {
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.swiper-card .book-card .content-book .price {
+  color: #e5588d;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.swiper-card .book-card .content-book .price del {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  opacity: 0.9;
+}
+.swiper-card .book-card .content-book .add-to-card {
+  font-size: 14px;
+  padding: 12.5px 20px;
+  line-height: 1.5;
+  display: inline-flex;
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s;
+  justify-content: center;
+  color: #fff;
+  background-color: #1a1668;
+  gap: 8px;
+}
+.swiper-card .book-card .content-book .add-to-card:hover i {
+  animation: fadeInDown 0.5s;
+  color: #fff;
+}
+.swiper-card .book-card .content-book .add-to-card:hover {
+  background-color: #110e47;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }/*# sourceMappingURL=main.css.map */
