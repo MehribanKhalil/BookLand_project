@@ -217,7 +217,7 @@ blog.addEventListener("click", function (e) {
 const shoppingCart = document.querySelector(".shopping-cart")
 const basket = document.querySelector(".basket")
 
-shoppingCart.addEventListener("click",function (e) {
+shoppingCart.addEventListener("click", function (e) {
     e.preventDefault()
     basket.classList.toggle("basketactive")
 })
@@ -231,8 +231,8 @@ window.onscroll = function () {
     scrollFunction()
     backFunction()
 };
-function scrollFunction() {   
-     if (window.scrollY < 150) {
+function scrollFunction() {
+    if (window.scrollY < 150) {
         navScroll.style.height = "0px"
         navScroll.style.top = "-80px"
         navScroll.style.overflow = "hidden"
@@ -249,20 +249,86 @@ function scrollFunction() {
 
 // // back scroll etdikde top sehifeye getmek ucun
 const back = document.querySelector(".back")
-
-let scrolling = window.pageYOffset;
-
+back.style.transition = "0.5s"
 
 function backFunction() {
-    let currentScrollPos = window.pageYOffset;
-
-    if (scrolling > currentScrollPos) {
-
-        back.style.bottom = "10px";
-        back.style.opacity = "1";
-    } else {
-        back.style.bottom = "0px";
+    if (window.scrollY < 500) {
         back.style.opacity = "0";
     }
-    scrolling = currentScrollPos;
+    else {
+        back.style.opacity = "1";
+    }
 }
+
+//swiper bookonland sectionu
+
+var swiper = new Swiper(".saleBookSwiper", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: true,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+        }
+    },
+});
+//  bookonland swiper end
+
+
+
+//deatils buttons
+const descriptionBtn = document.querySelector(".description")
+const reviewsBtn = document.querySelector(".reviews")
+
+const descriptionSection = document.getElementById("description")
+const reviewsSection = document.getElementById("reviews")
+
+const descriptionBefore = document.querySelector(".description::before")
+const reviewsBefore = document.querySelector(".reviews::before")
+
+
+descriptionBtn.addEventListener("click",function (p) {
+    p.preventDefault()
+    descriptionSection.classList.add("active")
+    reviewsSection.classList.add("deactive")
+
+    descriptionBefore.classList.add("width")
+    
+    if (reviewsBefore.classList.contains("width")) {
+        reviewsBefore.classList.remove("width")
+    }
+
+})
+reviewsBtn.addEventListener("click",function (p) {
+    p.preventDefault()
+    descriptionSection.classList.remove("active")
+    reviewsSection.classList.remove("deactive")
+
+    reviewsBefore.classList.add("width")
+
+    if (descriptionBefore.classList.contains("width")) {
+        descriptionBefore.classList.remove("width")
+    }
+})
