@@ -62,9 +62,10 @@ var swiper = new Swiper(".recomendedCard", {
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
+  loop:true,
   centeredSlides: true,
   autoplay: {
-    delay: 3500,
+    delay: 3000,
     disableOnInteraction: false,
   },
  
@@ -74,6 +75,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".specialSwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
+  loop:true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -97,3 +99,40 @@ var swiper = new Swiper(".specialSwiper", {
     }
   },
 });
+
+
+//swiper bookonland sectionu
+
+var swiper = new Swiper(".saleBookSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+      300: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          centeredSlides: true,
+      },
+      768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+      },
+      992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+      },
+      1200: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+      }
+  },
+});
+//  bookonland swiper end

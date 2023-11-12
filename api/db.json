@@ -11,7 +11,8 @@
       "discount": 20,
       "languages": ["en"],
       "category": "Classic",
-      "rating": 5
+      "rating": 5,
+      "janr": "horror"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "discount": 10,
       "languages": ["en"],
       "category": "Children's Fiction",
-      "rating": 4
+      "rating": 4,
+      "janr": "horror"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "discount": 0,
       "languages": ["en"],
       "category": "Contemporary Fiction",
-      "rating": 5
+      "rating": 5,
+      "janr": "horror"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "discount": 0,
       "languages": ["en"],
       "category": "Crime",
-      "rating": 4
+      "rating": 4,
+      "janr": "horror"
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "discount": 20,
       "languages": ["en"],
       "category": "Crime",
-      "rating": 2
+      "rating": 2,
+      "janr": "horror"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "discount": 10,
       "languages": ["en"],
       "category": "Roman",
-      "rating": 5
+      "rating": 5,
+      "janr": "horror"
     },
     {
         "id": 7,
@@ -89,7 +95,73 @@
         "discount": 15,
         "languages": ["en"],
         "category": "Romance",
-        "rating": 4
+        "rating": 4,
+        "janr": "horror"
+    }
+  ],
+  "specialPrice":[
+    {
+      "id": 8,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/01a3289f1399825e787f95a3fb3870b3-640x450.jpg",
+      "title": "A Heavy LIft",
+      "janr": "horror",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":30,
+      "discount":50
+    },
+    {
+      "id": 9,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/3771d025476623c0a09d28afac0990ee-640x450.jpg",
+      "title": "Seconds [PART 1]",
+      "janr": "horror",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":70,
+      "discount":40
+    },
+    {
+      "id": 10,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/book4-1-640x450.jpg",
+      "title": "Fun age",
+      "janr": "horror",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":40,
+      "discount":20
+    },
+    {
+      "id": 11,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/2e6a1549a2b9aaa7cb1609034b654c12-640x450.jpg",
+      "title": "The Missadventure",
+      "janr": "horror",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":18,
+      "discount":30
+    }
+
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/testimonial4.jpg",
+      "review": "Very impresive store. Your book made studying for the ABC certification exams a breeze. Thank you very much. Your book made studying for the ABC certification exams a breeze. Very impresive store. Your book made studying for the ABC certification exams a breeze. Your book made studying for the ABC certification exams a breeze..",
+      "name": "Johnson",
+      "position":"faculty of Economics 2022",
+      "rating":4
+    },
+    {
+      "id": 2,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/testimonial5.jpg",
+      "review": "Very impresive store. Your book made studying for the ABC certification exams a breeze. Thank you very much. Your book made studying for the ABC certification exams a breeze. Very impresive store. Your book made studying for the ABC certification exams a breeze. Your book made studying for the ABC certification exams a breeze..",
+      "name": "Simanungkalit",
+      "position":"faculty of Economics 2022",
+      "rating":5
+    },
+    {
+      "id": 3,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/testimonial6-1.jpg",
+      "review": "Very impresive store. Your book made studying for the ABC certification exams a breeze. Thank you very much. Your book made studying for the ABC certification exams a breeze. Very impresive store. Your book made studying for the ABC certification exams a breeze. Your book made studying for the ABC certification exams a breeze..",
+      "name": "Johnson Simanungkalit",
+      "position":"faculty of Economics 2022",
+      "rating":3
     }
   ]
 }

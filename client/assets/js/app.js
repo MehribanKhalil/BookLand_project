@@ -88,11 +88,11 @@ pages.addEventListener("click", function (e) {
     if (subModalHome.classList.contains("subhomeactive")) {
         subModalHome.classList.remove("subhomeactive")
     }
-    if (homeDeactive.classList.contains("displayNone")) {
-        homeDeactive.classList.remove("displayNone")
+    if (homeDeactive.classList.contains("displayFlex")) {
+        homeDeactive.classList.remove("displayFlex")
     }
-    if (homeActive.classList.contains("displayFlex")) {
-        homeActive.classList.remove("displayFlex")
+    if (homeActive.classList.contains("displayNone")) {
+        homeActive.classList.remove("displayNone")
     }
     //for remove shop
     if (subShop.classList.contains("subshopactive")) {
@@ -134,11 +134,11 @@ shop.addEventListener("click", function (e) {
     if (subModalHome.classList.contains("subhomeactive")) {
         subModalHome.classList.remove("subhomeactive")
     }
-    if (homeDeactive.classList.contains("displayNone")) {
-        homeDeactive.classList.remove("displayNone")
+    if (homeDeactive.classList.contains("displayFlex")) {
+        homeDeactive.classList.remove("displayFlex")
     }
-    if (homeActive.classList.contains("displayFlex")) {
-        homeActive.classList.remove("displayFlex")
+    if (homeActive.classList.contains("displayNone")) {
+        homeActive.classList.remove("displayNone")
     }
     //for remove pages
     if (subPages.classList.contains("subpagesactive")) {
@@ -179,11 +179,11 @@ blog.addEventListener("click", function (e) {
     if (subModalHome.classList.contains("subhomeactive")) {
         subModalHome.classList.remove("subhomeactive")
     }
-    if (homeDeactive.classList.contains("displayNone")) {
-        homeDeactive.classList.remove("displayNone")
+    if (homeDeactive.classList.contains("displayFlex")) {
+        homeDeactive.classList.remove("displayFlex")
     }
-    if (homeActive.classList.contains("displayFlex")) {
-        homeActive.classList.remove("displayFlex")
+    if (homeActive.classList.contains("displayNone")) {
+        homeActive.classList.remove("displayNone")
     }
     //for remove pages
     if (subPages.classList.contains("subpagesactive")) {
@@ -247,7 +247,7 @@ function scrollFunction() {
     }
 };
 
-// // back scroll etdikde top sehifeye getmek ucun
+// back scroll etdikde top sehifeye getmek ucun
 const back = document.querySelector(".back")
 back.style.transition = "0.5s"
 
@@ -260,41 +260,7 @@ function backFunction() {
     }
 }
 
-//swiper bookonland sectionu
 
-var swiper = new Swiper(".saleBookSwiper", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        300: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            centeredSlides: true,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1200: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-        }
-    },
-});
-//  bookonland swiper end
 
 
 
@@ -309,26 +275,26 @@ const descriptionBefore = document.querySelector(".description::before")
 const reviewsBefore = document.querySelector(".reviews::before")
 
 
-descriptionBtn.addEventListener("click",function (p) {
-    p.preventDefault()
-    descriptionSection.classList.add("active")
-    reviewsSection.classList.add("deactive")
+// descriptionBtn.addEventListener("click",function (p) {
+//     p.preventDefault()
+//     descriptionSection.classList.add("active")
+//     reviewsSection.classList.add("deactive")
 
-    descriptionBefore.classList.add("width")
+//     descriptionBefore.classList.add("width")
     
-    if (reviewsBefore.classList.contains("width")) {
-        reviewsBefore.classList.remove("width")
-    }
+//     if (reviewsBefore.classList.contains("width")) {
+//         reviewsBefore.classList.remove("width")
+//     }
 
-})
-reviewsBtn.addEventListener("click",function (p) {
-    p.preventDefault()
-    descriptionSection.classList.remove("active")
-    reviewsSection.classList.remove("deactive")
+// })
+// reviewsBtn.addEventListener("click",function (p) {
+//     p.preventDefault()
+//     descriptionSection.classList.remove("active")
+//     reviewsSection.classList.remove("deactive")
 
-    reviewsBefore.classList.add("width")
+//     reviewsBefore.classList.add("width")
 
-    if (descriptionBefore.classList.contains("width")) {
-        descriptionBefore.classList.remove("width")
-    }
-})
+//     if (descriptionBefore.classList.contains("width")) {
+//         descriptionBefore.classList.remove("width")
+//     }
+// })

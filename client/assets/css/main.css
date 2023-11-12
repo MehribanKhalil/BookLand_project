@@ -38,6 +38,10 @@ ul, li {
   color: #fff;
 }
 
+.swiper-slide {
+  text-align: start !important;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
@@ -1203,7 +1207,12 @@ header .menu .modalactive {
   padding: 10px 5px;
 }
 .basket_card .basket_card_content .card_img {
-  max-width: 70px;
+  width: 60px;
+  height: 80px;
+}
+.basket_card .basket_card_content .card_img img {
+  height: 100%;
+  width: 100%;
 }
 .basket_card .basket_card_content .basket_book_info {
   display: flex;
@@ -1469,12 +1478,57 @@ header .menu .modalactive {
   font-size: 0.9rem;
   transition: all 0.4s ease;
   margin-right: 20px;
+  position: relative;
+  height: 48px;
+  width: 96px;
+  padding: 0;
 }
 #bookland_intro .intro_left .left_side_buttons .btn_buy:hover {
   background-color: #e5588d;
   color: #fff;
 }
-#bookland_intro .intro_left .left_side_buttons .btn_details {
+#bookland_intro .intro_left .left_side_buttons .btn_buy a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_buy a:hover::after {
+  width: 100%;
+  left: 0px;
+  background: none;
+  opacity: 0;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_buy a:hover::before {
+  width: 100%;
+  background: none;
+  opacity: 0;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_buy a::after,
+#bookland_intro .intro_left .left_side_buttons .btn_buy a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -2px;
+  width: 0;
+  height: 100%;
+  transition: 0.8s;
+  border-right: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  transition-timing-function: ease;
+  opacity: 1;
+  border-radius: 0;
+}
+#bookland_intro .intro_left .left_side_buttons .btn_buy a::after {
+  transition-delay: 0.8s;
+}
+#bookland_intro .intro_left .btn_details {
   color: #1a1668;
   background: #fff;
   border: 1px solid #1a1668;
@@ -1484,41 +1538,91 @@ header .menu .modalactive {
   font-size: 0.9rem;
   transition: all 0.4s ease;
   padding-right: 20px;
+  position: relative;
+  height: 48px;
+  width: 120px;
+  padding: 0;
 }
-#bookland_intro .intro_left .left_side_buttons .btn_details:hover {
+#bookland_intro .intro_left .btn_details:hover {
   background-color: #1a1668;
   color: #fff;
 }
-#bookland_intro .intro_left .left_side_partners {
+#bookland_intro .intro_left .btn_details:hover a {
+  color: #fff;
+}
+#bookland_intro .intro_left .btn_details a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d169b;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+#bookland_intro .intro_left .btn_details a:hover::after {
+  width: 100%;
+  left: 0px;
+  background: none;
+  opacity: 0;
+}
+#bookland_intro .intro_left .btn_details a:hover::before {
+  width: 100%;
+  background: none;
+  opacity: 0;
+}
+#bookland_intro .intro_left .btn_details a::after,
+#bookland_intro .intro_left .btn_details a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -2px;
+  width: 0;
+  height: 100%;
+  transition: 0.8s;
+  border-right: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  transition-timing-function: ease;
+  opacity: 1;
+  border-radius: 0;
+}
+#bookland_intro .intro_left .btn_details a::after {
+  transition-delay: 0.8s;
+}
+#bookland_intro .left_side_partners {
   padding-top: 80px;
 }
-#bookland_intro .intro_left .left_side_partners p {
+#bookland_intro .left_side_partners p {
   color: #9290b0;
   padding: 10px 0;
 }
-#bookland_intro .intro_left .left_side_partners img {
+#bookland_intro .left_side_partners img {
   padding-right: 10px;
 }
-#bookland_intro .intro_right {
+
+.intro_right {
   position: relative;
   z-index: 1;
 }
-#bookland_intro .intro_right img {
+.intro_right img {
   width: 100%;
   height: auto;
 }
+
 @media screen and (max-width: 992px) {
-  #bookland_intro .intro_left {
+  .intro_left {
     padding: 20px 0;
   }
-  #bookland_intro .intro_left h5 {
+  .intro_left h5 {
     padding-top: 20px;
   }
-  #bookland_intro .intro_left .left_side_partners {
+  .intro_left .left_side_partners {
     display: none;
   }
 }
-
 #best_choice {
   padding: 80px 0;
 }
@@ -1822,6 +1926,9 @@ header .menu .modalactive {
 #customers .swipper-container .customers-review .customers-info .details .raiting .raiting-star {
   display: flex;
 }
+#customers .swipper-container .customers-review .customers-info .details .raiting .raiting-star i {
+  color: #ffb000;
+}
 #customers .swipper-container .customers-review .customers-info .details .raiting .rate {
   font-family: Poppins;
   font-weight: 600;
@@ -2079,10 +2186,61 @@ header .menu .modalactive {
   outline: none;
   font-size: 0.9rem;
   transition: all 0.4s ease;
+  position: relative;
+  height: 48px;
+  width: 120px;
+  padding: 0;
 }
 .swiper-slide .book-card .content-book button:hover {
   background-color: #161358;
   color: #fff;
+}
+.swiper-slide .book-card .content-book button:hover a {
+  color: #fff;
+}
+.swiper-slide .book-card .content-book button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.swiper-slide .book-card .content-book button a i {
+  padding-right: 5px;
+}
+.swiper-slide .book-card .content-book button a:hover::after {
+  width: 100%;
+  left: 0px;
+  background: none;
+  opacity: 0;
+}
+.swiper-slide .book-card .content-book button a:hover::before {
+  width: 100%;
+  background: none;
+  opacity: 0;
+}
+.swiper-slide .book-card .content-book button a::after,
+.swiper-slide .book-card .content-book button a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -2px;
+  width: 0;
+  height: 100%;
+  transition: 0.8s;
+  border-right: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  transition-timing-function: ease;
+  opacity: 1;
+  border-radius: 0;
+}
+.swiper-slide .book-card .content-book button a::after {
+  transition-delay: 0.8s;
 }
 
 @media screen and (max-width: 600px) {
