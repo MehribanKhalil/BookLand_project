@@ -68,6 +68,24 @@
             }
         }
 
+        .count{
+                font-size: 2.3rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                margin: 0 7px;
+                div{
+                // background-color: #e5588d;
+                cursor: pointer;
+                padding: 10px;        
+                }
+                h6{
+                    margin: 0;
+                    font-size: 1.4rem;
+                }
+        }
+
         .btn {
             display: flex;
             align-items: center;

@@ -1,18 +1,36 @@
 .counter_items{
     text-align: center;
     margin: 0 auto;
+    &:hover .counter_spin{
+        animation: spin 0.45s linear  infinite;
+    }
     .counter_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
-        width: 120px;
-        line-height: 120px;
+        width: 100px;
+        line-height: 100px;
         height: 120px;
         color: $main-color;
         font-size: 3.125rem;
-        border: 4px dashed $main-color;
-        
+        position: relative;
+        .counter_spin{
+            border: 4px dashed $main-color;
+            border-radius: $border-radius;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+        }
     }
 
     .counter_content{
         margin: 30px 0;
+    }
+}
+@keyframes spin{
+    100%{
+        transform: rotateX(360deg);
     }
 }

@@ -10,9 +10,8 @@
       "price": 15,
       "discount": 20,
       "languages": ["en"],
-      "category": "Classic",
       "rating": 5,
-      "janr": "horror"
+      "janr": "Classic"
     },
     {
       "id": 2,
@@ -24,9 +23,8 @@
       "price": 20,
       "discount": 10,
       "languages": ["en"],
-      "category": "Children's Fiction",
       "rating": 4,
-      "janr": "horror"
+      "janr": "Children's Fiction"
     },
     {
       "id": 3,
@@ -38,9 +36,8 @@
       "price": 21,
       "discount": 0,
       "languages": ["en"],
-      "category": "Contemporary Fiction",
       "rating": 5,
-      "janr": "horror"
+      "janr": "Contemporary Fiction"
     },
     {
       "id": 4,
@@ -52,9 +49,8 @@
       "price": 10.5,
       "discount": 0,
       "languages": ["en"],
-      "category": "Crime",
       "rating": 4,
-      "janr": "horror"
+      "janr": "Crime"
     },
     {
       "id": 5,
@@ -66,9 +62,8 @@
       "price": 19.3,
       "discount": 20,
       "languages": ["en"],
-      "category": "Crime",
       "rating": 2,
-      "janr": "horror"
+      "janr": "Crime"
     },
     {
       "id": 6,
@@ -80,9 +75,8 @@
       "price": 18,
       "discount": 10,
       "languages": ["en"],
-      "category": "Roman",
       "rating": 5,
-      "janr": "horror"
+      "janr": "Roman"
     },
     {
         "id": 7,
@@ -94,9 +88,8 @@
         "price": 23.8,
         "discount": 15,
         "languages": ["en"],
-        "category": "Romance",
         "rating": 4,
-        "janr": "horror"
+        "janr": "Romance"
     }
   ],
   "specialPrice":[
@@ -132,6 +125,44 @@
       "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/2e6a1549a2b9aaa7cb1609034b654c12-640x450.jpg",
       "title": "The Missadventure",
       "janr": "horror",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":18,
+      "discount":30
+    }
+
+  ],
+  "saleBooks":[
+    {
+      "id": 12,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/994d4fa6f936ff999ebe7ddb54d3a78e-450x600.jpg",
+      "title": "Take Out Tango",
+      "janr": "horror",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":50,
+      "discount":50
+    },
+    {
+      "id": 13,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/b01e854ce12519d3d7bac72bd7bf8e0f-450x600.jpg",
+      "title": "Battle Drive",
+      "janr": "Drama",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":30,
+      "discount":20
+    },
+    {
+      "id": 14,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cfe08fd2dbb10fcea101b0547247280e-450x600.jpg",
+      "title": "Missadventure",
+      "janr": "Business",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":18,
+      "discount":10
+    },
+    {
+      "id": 15,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/a7cbc9ec4f61f7713101612a45211ebb-450x600.jpg",
+      "janr": "Terrible Madness",
       "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
       "price":18,
       "discount":30

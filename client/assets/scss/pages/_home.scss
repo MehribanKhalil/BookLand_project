@@ -1,22 +1,41 @@
 //intro section start
 #bookland_intro {
-  background: url(https://bookland.wprdx.com/demo/wp-content/themes/bookland//assets/images/background/waveelement2.png);
-  // background-color: lightgreen;
-  // height: 100vh;
+  background: url("https://bookland.wprdx.com/demo/wp-content/themes/bookland//assets/images/background/waveelement2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #f5f5f5;
+
+  .swiper-pagination {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 40px;
+    position: absolute;
+    left: 96%;
+    top: 50%;
+  }
+  .swiper-pagination-bullet {
+    // width: 10px;
+    // height: 10px;
+    // margin: 0 6px;
+    background-color: $main-color;
+  }
+
   .intro_left {
     padding: 100px 0 20px;
+
     h5 {
       letter-spacing: 20px;
       color: #e5588d;
       font-weight: 400;
       // padding-top: 100px;
     }
+
     h1 {
       font-size: clamp(1.5rem, 0.9796rem + 2.7755vw, 3.2rem);
     }
+
     .author_category {
       a {
         color: #192436;
@@ -30,6 +49,7 @@
       border-left: 1px solid #3b2f4a;
       padding-left: 30px;
       margin: 30px 0;
+
       p {
         color: #192436;
         max-width: 600px;
@@ -38,6 +58,7 @@
 
     .price {
       margin: 25px 0;
+
       .discounted_price {
         font-size: 2rem;
         font-weight: 500;
@@ -119,13 +140,12 @@
         }
       }
     }
+
     .btn_details {
-      @include button(
-        $text_color: #1a1668,
-        $bg_color: #fff,
+      @include button($text_color: #1a1668,
+        $bg_color: none,
         $border_color: #1a1668,
-        $hover-bg: #1a1668
-      );
+        $hover-bg: #1a1668);
       padding-right: 20px;
       position: relative;
       height: 48px;
@@ -188,15 +208,96 @@
   .left_side_partners {
     // margin: 80px 0;
     padding-top: 80px;
+
     p {
       color: $gray-color;
       padding: 10px 0;
     }
+
     img {
       padding-right: 10px;
     }
   }
 }
+
+.intro_right {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: $main-color;
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    z-index: -99;
+    opacity: 0.8;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .intro_right {
+    &::after {
+      width: 550px;
+      height: 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .intro_left {
+    padding: 20px 0;
+
+    h5 {
+      padding-top: 20px;
+    }
+
+    .left_side_partners {
+      display: none;
+    }
+  }
+
+  .intro_right {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bookland_intro {
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+
+      .intro_left {
+        padding: 40px 24px;
+        h5{
+          font-size: 16px;
+          letter-spacing: 8px;
+        }
+      }
+      .intro_right{
+        img {
+          width: 70%;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+//intro section end
 
 .intro_right {
   position: relative;
@@ -294,8 +395,14 @@
   }
   @media screen and (max-width: 575px) {
     padding: 40px 0;
-
+    
     .left_side {
+      .left_side_img {
+        .first{
+          height: 100%;
+        }
+      }
+  
       .experience_category {
         width: 100%;
         display: block;
@@ -489,7 +596,7 @@
 
 #recomended_books {
   background-color: $bg-color;
-  padding: 100px 0 80px;
+  padding: 80px 0;
 
   .container_books {
     padding: 0 90px;

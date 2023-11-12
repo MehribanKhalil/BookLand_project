@@ -1,7 +1,7 @@
 const recomendedBookSlider = document.querySelector(".recomendedCardSlider");
 const basketCardsContainer = document.querySelector(".basket_cards");
 const specialCartContainer=document.querySelector(".specialCartContainer")
-
+const cartItemCount=document.querySelector(".cartItemCount")
 
 const urlRecomendedBooks = "http://localhost:3000/recomendedBooks";
 const urlSpecialBooks ="http://localhost:3000/specialPrice"
@@ -14,8 +14,9 @@ if (getLocalStorage("Books")) {
     createCartElement()
 }
 
+let lengthLocal = getLocalStorage("Books").length;
+cartItemCount.textContent = lengthLocal;
 
-// -------------------------
 
 //fetch data Recomended Books
 async function getRecomendedBooks() {
@@ -41,7 +42,18 @@ function getBookSpecial() {
       .catch((err) => console.log(err));
 }
 
-
+//Deacrease Item Count
+function decreaseCount(bookId) {
+    const book = bascetArr.find(x => x.id === bookId)
+    if (book) {
+        book.count--
+      if (book.count < 0) {
+        book.count = 0
+      }
+      setLocalStorage('Books', booksArr)
+      createCartElement()
+    }
+}
 
 
 //CREATE RECOMMENDED CARDS
@@ -105,6 +117,9 @@ function createRecomendedCards(data) {
       setLocalStorage("Books", booksArr);
        createCartElement()
       //   console.log(booksArr);
+
+      let lengthLocal = getLocalStorage("Books").length;
+        cartItemCount.textContent = lengthLocal;
     });
 
     recomendedBook.classList.add("swiper-slide");
@@ -114,7 +129,6 @@ function createRecomendedCards(data) {
 
 
 // CREATE SPECIAL CARDS
-
 function creatSpecialCards(id,imgageS,titleS,janrS,descriptionS,discountS,priceS) {
     const specialCard=document.createElement("div")
  
@@ -170,6 +184,9 @@ function creatSpecialCards(id,imgageS,titleS,janrS,descriptionS,discountS,priceS
 
           setLocalStorage("Books", booksArr);
             createCartElement()
+
+            let lengthLocal = getLocalStorage("Books").length;
+            cartItemCount.textContent = lengthLocal;        
     })
 
  specialCartContainer.append(specialCard)
@@ -218,6 +235,9 @@ function createCartElement() {
                 booksArr=booksArr.filter(x=>x.id !==item.id)
                 setLocalStorage('Books',booksArr)
                 createCartElement()
+
+                let lengthLocal = getLocalStorage("Books").length;
+                cartItemCount.textContent = lengthLocal;
             })
             basketCard.classList.add('basket_card')
             basketCardsContainer.appendChild(basketCard)

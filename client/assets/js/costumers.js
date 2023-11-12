@@ -96,7 +96,7 @@ function getBooks() {
     .catch((err) => console.log(err));
 }
 
-//Starts
+//Rate Starts
 function createStars(rating) {
   let starsHTML = '';
   for (let i = 0; i < 5; i++) {

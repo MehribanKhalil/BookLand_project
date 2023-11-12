@@ -174,52 +174,50 @@
                   src="https://img.icons8.com/sf-regular/48/shopping-cart.png"
                   alt="shopping-cart"
                 />
-                <span class="cardlist">0</span>
-
+                <span class="cardlist cartItemCount">0</span>
               </a>
-                <div class="basket">
-                  <div class="bottomside">
+              <div class="basket">
+                <div class="topSide">
+                  <!--! basket card start-->
+                  <div class="basket_cards">
+                    <!-- <div class="basket_card">
 
-                    <!--! basket card start-->
-                    <div class="basket_cards">
+                      <div class="basket_card_content">
+                        <div class="card_img">
+                          <img src="https://static.insales-cdn.com/images/products/1/6688/532666912/large_2022-03-26-09-32-261648272746.jpg" alt="">
+                        </div>
 
-                      <!-- <div class="basket_card">
-
-                        <div class="basket_card_content">
-                          <div class="card_img">
-                            <img src="https://static.insales-cdn.com/images/products/1/6688/532666912/large_2022-03-26-09-32-261648272746.jpg" alt="">
+                        <div class="basket_book_info">
+                          <a href="#"><h5 class="book_name">header</h5></a>
+                          <div> <span>price</span></div>
+                          <div class="d-flex align-items-center">
+                            <button class="pb-1">-</button>
+                            <span>Count</span>
+                            <button>+</button>
                           </div>
-    
-                          <div class="basket_book_info">
-                            <a href="#"><h5 class="book_name">header</h5></a>
-                            <div> <span>price</span></div>
-                            <div class="d-flex align-items-center">
-                              <button class="pb-1">-</button>
-                              <span>Count</span>
-                              <button>+</button>
-                            </div>
-                          </div>
-    
-                          <div class="remove_item">
-                            <i class="fa-solid fa-xmark"></i>
-                          </div>
-    
-                        </div> -->
-                    </div>
-                   
-                    <!-- basket card end-->
+                        </div>
 
-                    <div class="subtotal">
-                      <strong>Subtotal:</strong>
-                      <span>0$</span>
-                    </div>
-                    <div class="btn">
-                      <button>VIEW CART</button>
-                      <button>CHECKOUT</button>
-                    </div>
+                        <div class="remove_item">
+                          <i class="fa-solid fa-xmark"></i>
+                        </div>
+
+                      </div> -->
+                  </div>
+
+                  <!-- basket card end-->
+                </div>
+
+                <div class="bottomside">
+                  <div class="subtotal">
+                    <strong>Subtotal:</strong>
+                    <span>0$</span>
+                  </div>
+                  <div class="btn">
+                    <button>VIEW CART</button>
+                    <button>CHECKOUT</button>
                   </div>
                 </div>
-              
+              </div>
             </li>
             <li>
               <a class="img" href="">
@@ -408,12 +406,18 @@
         <div class="row">
           <div class="col-md-12">
             <div class="menu">
-              <div class="back">
-                <a href="#bookland_intro">
-                  <i class="fa-solid fa-arrow-up"></i>
+              <!-- <div class="back"> -->
+                <a href="#bookland_intro" class="back">
+
+                  <div class="backDiv">
+                    <i class="fa-solid fa-arrow-up"></i>
+
+                  </div>
+                  <div class="circle"></div>
+
+
                 </a>
-                <div class="circle"></div>
-              </div>
+              <!-- </div> -->
               <ul>
                 <li class="home">
                   <a href="">Home</a>
@@ -591,1125 +595,1168 @@
                       <a href="">Checkout</a>
                     </li>
 
-                  <li>
-                    <a href="">My Account</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="blog">
-                <a href="">Blog</a>
-                <ul class="subblog">
-                  <li>
-                    <a href="">Blog Grid</a>
-                  </li>
-                  <li>
-                    <a href="">Blog Large Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Blog list Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="">Blog Details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="contact">
-                <a href="">Contact Us</a>
-              </li>
-            </ul>
-            <div class="btn">
-              <a href="">Get In Touch</a>
+                    <li>
+                      <a href="">My Account</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="blog">
+                  <a href="">Blog</a>
+                  <ul class="subblog">
+                    <li>
+                      <a href="">Blog Grid</a>
+                    </li>
+                    <li>
+                      <a href="">Blog Large Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Blog list Sidebar</a>
+                    </li>
+                    <li>
+                      <a href="">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="contact">
+                  <a href="">Contact Us</a>
+                </li>
+              </ul>
+              <div class="btn">
+                <a href="">Get In Touch</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
+    <!--! main start -->
+    <main>
+      <!--! intro section start -->
+      <section id="bookland_intro">
+        <div class="container">
   
-   <!--! main start -->
-   <main>
-    <!--! intro section start -->
-    <section id="bookland_intro">
-      <div class="container">
-        <div class="row d-flex align-items-end">
-          <div class="intro_left col-12 col-md-6 col-lg-6">
-            <h5>BEST SELLER</h5>
-            <h1>Pushing Clouds</h1>
-            <div class="author_category">
-              <a href="#" class="author"> Napoleon Hill </a>
-              <a href="#" class="category"> Sports </a>
-            </div>
-            <div class="quote">
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal.
-              </p>
-            </div>
-            <div class="price d-flex align-items-center">
-              <span class="discounted_price">$15.25</span>
-              <span class="original_price">$17.2</span>
-              <span class="discount">6% off</span>
-            </div>
-
-            <div class="left_side_buttons">
-              <button class="btn_buy"><a href="">Buy Now</a></button>
-              <button class="btn_details"><a href="">See Details</a></button>
-            </div>
-
-            <div class="left_side_partners">
-              <p>Partner</p>
-              <div>
-                <img
-                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-3.png"
-                  alt=""
-                />
-                <img
-                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-2.png"
-                  alt=""
-                />
-                <img
-                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-1.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="intro_right col-12 col-md-6 col-lg-6">
-            <img
-              src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/banner-media2.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--! intro section start -->
-
-    <!--! best choice section start -->
-    <section id="best_choice">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="left_side col-12 col-lg-6">
-            <div class="row">
-              <div class="col-6 left_side_img">
-                <img
-                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/about1.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-6 left_side_img">
-                <img
-                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/about2.jpg"
-                  alt=""
-                />
-
-                <div class="left_side experience_category">
-                  <div class="experience">
-                    <span class="experience_counter" countData="40">0</span
-                    ><span>+</span>
-                    <p>Years of Experience</p>
+          <!-- Swiper -->
+  
+          <div class="swiper intro_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="intro_left col-md-6 col-lg-6">
+                  <h5>BEST SELLER</h5>
+                  <h1>Pushing Clouds</h1>
+                  <div class="author_category">
+                    <a href="#" class="author"> Napoleon Hill </a>
+                    <a href="#" class="category"> Sports </a>
                   </div>
+                  <div class="quote">
+                    <p>
+                      It is a long established fact that a reader will be distracted
+                      by the readable content of a page when looking at its layout.
+                      The point of using Lorem Ipsum is that it has a more-or-less
+                      normal.
+                    </p>
+                  </div>
+                  <div class="price d-flex align-items-center">
+                    <span class="discounted_price">$15.25</span>
+                    <span class="original_price">$17.2</span>
+                    <span class="discount">6% off</span>
+                  </div>
+  
+                  <div class="left_side_buttons">
+                    <button class="btn_buy"><a href="">Buy Now</a></button>
+                    <button class="btn_details"><a href="">See Details</a></button>
+                  </div>
+  
+                  <div class="left_side_partners">
+                    <p>Partner</p>
+                    <div>
+                      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-3.png" alt="" />
+                      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-2.png" alt="" />
+                      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="intro_right col-12 col-md-6 col-lg-6 d-flex align-items-center">
+                  <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/banner-media2.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="intro_left col-md-6 col-lg-6">
+                  <h5>BEST MANAGEMENT</h5>
+                  <h1>Think and grow rich</h1>
+                  <div class="author_category">
+                    <a href="#" class="author"> Napoleon Hill </a>
+                    <a href="#" class="category"> Sports </a>
+                  </div>
+                  <div class="quote">
+                    <p>
+                      It is a long established fact that a reader will be distracted
+                      by the readable content of a page when looking at its layout.
+                      The point of using Lorem Ipsum is that it has a more-or-less
+                      normal.
+                    </p>
+                  </div>
+                  <div class="price d-flex align-items-center">
+                    <span class="discounted_price">$15.25</span>
+                    <span class="original_price">$17.2</span>
+                    <span class="discount">6% off</span>
+                  </div>
+  
+                  <div class="left_side_buttons">
+                    <button class="btn_buy"><a href="">Buy Now</a></button>
+                    <button class="btn_details"><a href="">See Details</a></button>
+                  </div>
+  
+                  <div class="left_side_partners">
+                    <p>Partner</p>
+                    <div>
+                      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-3.png" alt="" />
+                      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-2.png" alt="" />
+                      <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/partner-1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="intro_right col-12 col-md-6 col-lg-6 d-flex align-items-center">
+                  <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/banner-media.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Swiper JS -->
+        </div>
+      </section>
+      <!--! intro section start -->
 
-                  <div class="category">
-                    <ul>
-                      <li class="d-flex align-items-center pb-1">
-                        <i class="fa-solid fa-check"></i>
-                        <p>Comics & Graphics</p>
-                      </li>
-                      <li class="d-flex align-items-center py-1">
-                        <i class="fa-solid fa-check"></i>
-                        <p>Biography</p>
-                      </li>
-                      <li class="d-flex align-items-center py-1">
-                        <i class="fa-solid fa-check"></i>
-                        <p>Literary Collections</p>
-                      </li>
-                      <li class="d-flex align-items-center pt-1">
-                        <i class="fa-solid fa-check"></i>
-                        <p>Children Fiction</p>
-                      </li>
-                    </ul>
+      <!--! best choice section start -->
+      <section id="best_choice">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="left_side col-12 col-lg-6">
+              <div class="row">
+                <div class="col-6 left_side_img">
+                  <img class="first"
+                    src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/about1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6 left_side_img">
+                  <img
+                    src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/about2.jpg"
+                    alt=""
+                  />
+
+                  <div class="left_side experience_category">
+                    <div class="experience">
+                      <span class="experience_counter" countData="40">0</span
+                      ><span>+</span>
+                      <p>Years of Experience</p>
+                    </div>
+
+                    <div class="category">
+                      <ul>
+                        <li class="d-flex align-items-center pb-1">
+                          <i class="fa-solid fa-check"></i>
+                          <p>Comics & Graphics</p>
+                        </li>
+                        <li class="d-flex align-items-center py-1">
+                          <i class="fa-solid fa-check"></i>
+                          <p>Biography</p>
+                        </li>
+                        <li class="d-flex align-items-center py-1">
+                          <i class="fa-solid fa-check"></i>
+                          <p>Literary Collections</p>
+                        </li>
+                        <li class="d-flex align-items-center pt-1">
+                          <i class="fa-solid fa-check"></i>
+                          <p>Children Fiction</p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="right_side col-12 col-lg-6">
-            <h2>Bookland Is Best Choice For Learners</h2>
+            <div class="right_side col-12 col-lg-6">
+              <h2>Bookland Is Best Choice For Learners</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration which don’t look even
+                slightly believable. It Is A Long Established Fact That A Reader
+                Will Be Distracted
+              </p>
+              <button class="right_side_btn"><a href="">Contact Us</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--! best choice section end -->
+
+      <!--! companies section start -->
+      <section id="companies">
+        <div class="container">
+          <div class="swiper companies">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client2.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client1.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client6.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client5.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client4.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client3.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--! companies section end -->
+
+
+        <!--! Recomended books section start -->
+        <section id="recomended_books">
+              <div class="container_books">
+                <div class="recomended_title">
+                  <h2>Recomended For You</h2>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration which don’t look even
+                    slightly believable.
+                  </p>
+                </div>
+      
+                <div class="recomended_cards">
+                  <div class="swiper recomendedCard">
+                    <div class="swiper-wrapper recomendedCardSlider">
+                      <!--! <div class="swiper-slide recomended_book">
+                          <div class="book-card">
+                            <div class="img-book">
+                              <img
+                                src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="content-book">
+                              <h4 class="title"><a href="">Think</a></h4>
+                              <span class="price">$10</span>
+                              <button 
+                                ><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                            </div>
+                          </div>
+                        </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!--! Recomended books section end-->
+
+        <!--! content inner shake start   -->
+        <section id="content-inner">
+          <div class="container">
+            <div class="row">
+              <div class="card-inner col-12 col-md-6 col-lg-3">
+                <div class="icon-center">
+                  <div class="icon">
+                    <i class="fa-solid fa-bolt-lightning icon-cell"></i>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Quick Delivery</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                  </p>
+                </div>
+              </div>
+              <div class="card-inner col-12 col-md-6 col-lg-3">
+                <div class="icon-center">
+                  <div class="icon">
+                    <i class="fa-solid fa-shield-halved icon-cell"></i>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Secure Payment</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                  </p>
+                </div>
+              </div>
+              <div class="card-inner col-12 col-md-6 col-lg-3">
+                <div class="icon-center">
+                  <div class="icon">
+                    <i class="fa-solid fa-thumbs-up icon-cell"></i>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Best Quality</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                  </p>
+                </div>
+              </div>
+              <div class="card-inner col-12 col-md-6 col-lg-3">
+                <div class="icon-center">
+                  <div class="icon">
+                    <i class="fa-solid fa-star icon-cell"></i>
+                  </div>
+                </div>
+                <div class="content">
+                  <h5>Return Guarantee</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--! content inner shake end  -->
+
+      <!--! our-mission start  -->
+      <section id="our-mission">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="title">Our Mission</h2>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration which don’t look even
-              slightly believable. It Is A Long Established Fact That A Reader
-              Will Be Distracted
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
-            <button class="right_side_btn"><a href="">Contact Us</a></button>
           </div>
-        </div>
-      </div>
-    </section>
-    <!--! best choice section end -->
-
-    <!--! companies section start -->
-    <section id="companies">
-      <div class="container">
-        <div class="swiper companies">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client2.svg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client1.svg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client6.svg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client5.svg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client4.svg"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/client3.svg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--! companies section end -->
-
-    <!--!! counter section start -->
-    <section id="counter">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3">
-            <div class="counter_items">
-              <div class="counter_icon">
-                <i class="fa-solid fa-users"></i>
-              </div>
-
-              <div class="counter_content">
-                <h2 class="counter_count" data="88">88</h2>
-                <p class="counter_text">Happy Customers</p>
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mission-card">
+              <div class="content-mission">
+                <div class="icon">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="content-text">
+                  <h4>Best Bookstore</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href=""
+                    >Learn More <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-6 col-lg-3">
-            <div class="counter_items">
-              <div class="counter_icon">
-                <i class="fa-solid fa-book"></i>
-              </div>
-
-              <div class="counter_content">
-                <h2 class="counter_count" data="76">76</h2>
-                <p class="counter_text">Book Collections</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-lg-3">
-            <div class="counter_items">
-              <div class="counter_icon">
-                <i class="fa-solid fa-store"></i>
-              </div>
-
-              <div class="counter_content">
-                <h2 class="counter_count" data="100">100</h2>
-                <p class="counter_text">Our Stores</p>
+            <div class="col-lg-4 col-md-6 mission-card">
+              <div class="content-mission">
+                <div class="icon">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <div class="content-text">
+                  <h4>Trusted Seller</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href=""
+                    >Learn More <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-6 col-lg-3">
-            <div class="counter_items">
-              <div class="counter_icon">
-                <i class="fa-solid fa-leaf"></i>
-              </div>
-
-              <div class="counter_content">
-                <h2 class="counter_count" data="150">150</h2>
-                <p class="counter_text">Famous Writers</p>
+            <div class="col-lg-4 col-md-6 mission-card">
+              <div class="content-mission">
+                <div class="icon">
+                  <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="content-text">
+                  <h4>Best Bookstore</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, <br />
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href=""
+                    >Learn More <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--!! counter section end -->
+      </section>
+      <!--! our-mission end  -->
 
 
-    <!--! Recomended books section start -->
-    <section id="recomended_books">
-        <div class="container_books">
 
-            <div class="recomended_title">
-              <h2>Recomended For You</h2>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration which don’t look even slightly believable.
-              </p>
+      <!-- sale book section start -->
+      <section id="bookonasale">
+        <div class="container">
+          <!-- Swiper -->
+          <div class="swiper saleBookSwiper">
+            <div class="heading">
+              <h2>Books on Sale</h2>
+              <div class="swiper_compenents">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+              </div>
             </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="sale_card">
+                  <div class="imgbox">
+                    <img
+                      src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/994d4fa6f936ff999ebe7ddb54d3a78e-450x600.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h5>Take Out Tango</h5>
+                  <ul>
+                    <li>
+                      <a href="">Business, </a>
+                    </li>
+                    <li>
+                      <a href="">Sports</a>
+                    </li>
+                  </ul>
+                  <div class="rate-price">
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <span class="rating">5.00</span>
+                    </div>
+                    <div class="price">
+                      <del>$50.00</del>
+                      <span class="pricing">$40.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sale_card">
+                  <div class="imgbox">
+                    <img
+                      src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/b01e854ce12519d3d7bac72bd7bf8e0f-450x600.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h5>Battle Drive</h5>
+                  <ul>
+                    <li>
+                      <a href="">Drama, </a>
+                    </li>
+                    <li>
+                      <a href="">Sports</a>
+                    </li>
+                  </ul>
+                  <div class="rate-price">
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <span class="rating">4.00</span>
+                    </div>
+                    <div class="price">
+                      <del>$25.00</del>
+                      <span class="pricing">$20.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sale_card">
+                  <div class="imgbox">
+                    <img
+                      src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cfe08fd2dbb10fcea101b0547247280e-450x600.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h5>Missadventure</h5>
+                  <ul>
+                    <li>
+                      <a href="">Business, </a>
+                    </li>
+                    <li>
+                      <a href="">Sports</a>
+                    </li>
+                  </ul>
+                  <div class="rate-price">
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <span class="rating">4.00</span>
+                    </div>
+                    <div class="price">
+                      <del>$25.00</del>
+                      <span class="pricing">$18.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sale_card">
+                  <div class="imgbox">
+                    <img
+                      src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/a7cbc9ec4f61f7713101612a45211ebb-450x600.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h5>Terrible Madness</h5>
+                  <ul>
+                    <li>
+                      <a href="">Business, </a>
+                    </li>
+                    <li>
+                      <a href="">Strategy</a>
+                    </li>
+                  </ul>
+                  <div class="rate-price">
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <span class="rating">5.00</span>
+                    </div>
+                    <div class="price">
+                      <span class="pricing">$50.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sale_card">
+                  <div class="imgbox">
+                    <img
+                      src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/e5927e87ecbec52ddfbc4a24d3eb056e-450x600.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h5>Pushing Clouds</h5>
+                  <ul>
+                    <li>
+                      <a href="">Drana, </a>
+                    </li>
+                    <li>
+                      <a href="">Strategy</a>
+                    </li>
+                  </ul>
+                  <div class="rate-price">
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <span class="rating">5.00</span>
+                    </div>
+                    <div class="price">
+                      <del>$50.00</del>
+                      <span class="pricing">$30.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sale_card">
+                  <div class="imgbox">
+                    <img
+                      src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png"
+                      alt=""
+                    />
+                  </div>
+                  <h5>Think</h5>
+                  <ul>
+                    <li>
+                      <a href="">Sports, </a>
+                    </li>
+                    <li>
+                      <a href="">Strategy</a>
+                    </li>
+                  </ul>
+                  <div class="rate-price">
+                    <div class="rate">
+                      <i class="fa-solid fa-star"></i>
+                      <span class="rating">4.00</span>
+                    </div>
+                    <div class="price">
+                      <del>$25.00</del>
+                      <span class="pricing">$10.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- sale book section end-->
 
-            <div class="recomended_cards ">
-              
-              <div class="swiper recomendedCard ">
-                <div class="swiper-wrapper recomendedCardSlider">
+            <!-- what customers said section start   -->
+            <section id="customers">
+              <div class="container">
+                <div class="testimonial">
+                  <div class="section-head">
+                    <h2 class="title">What Customer's Said</h2>
+                    <p class="testimonial-text">
+                      There are many variations of passages of Lorem Ipsum available,
+                      but the majority have suffered alteration which don't look even
+                      slightly believable.
+                    </p>
+                  </div>
+                </div>
+                <div class="customers-swiper-section">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper customersSay"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- what customers said section end  -->
 
-                  <!--! <div class="swiper-slide recomended_book">
-                    <div class="book-card">
-                      <div class="img-book">
-                        <img
-                          src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png"
-                          alt=""
-                        />
+            
+      <!-- special offers section start  -->
+      <section id="special-offers">
+        <div class="container">
+          <div class="special-head">
+            <h2>Special Offers</h2>
+          </div>
+          <div class="swiper specialSwiper">
+            <div class="swiper-wrapper specialCartContainer"></div>
+          </div>
+        </div>
+      </section>
+      <!-- special offers section end  -->
+
+      <!--section pricing start-->
+      <section id="pricing">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+              <div class="textbox">
+                <h2>Our Pricing</h2>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="topcard">
+                  <h3>Basic Plan</h3>
+                  <div class="price">
+                    <h4>$99</h4>
+                    <span>/Month</span>
+                  </div>
+                  <p>Aliquam diu lacus, labortis quis sapien non.</p>
+                </div>
+                <div class="bottomcard">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
                       </div>
-                      <div class="content-book">
-                        <h4 class="title"><a href="">Think</a></h4>
-                        <span class="price">$10</span>
-                        <button 
-                          ><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                      <h6>Graphic Design</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
                       </div>
-                    </div>
-                  </div> -->
-
-                </div> 
-              </div>
-
-            </div>
-        </div>
-    </section>
-    <!--! Recomended books section end-->
-
-    <!--! content inner shake start   -->
-    <section id="content-inner">
-      <div class="container">
-        <div class="row">
-          <div class="card-inner col-12 col-md-6 col-lg-3">
-            <div class="icon-center">
-              <div class="icon">
-                <i class="fa-solid fa-bolt-lightning icon-cell"></i>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Quick Delivery</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor
-              </p>
-            </div>
-          </div>
-          <div class="card-inner col-12 col-md-6 col-lg-3">
-            <div class="icon-center">
-              <div class="icon">
-                <i class="fa-solid fa-shield-halved icon-cell"></i>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Secure Payment</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor
-              </p>
-            </div>
-          </div>
-          <div class="card-inner col-12 col-md-6 col-lg-3">
-            <div class="icon-center">
-              <div class="icon">
-                <i class="fa-solid fa-thumbs-up icon-cell"></i>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Best Quality</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor
-              </p>
-            </div>
-          </div>
-          <div class="card-inner col-12 col-md-6 col-lg-3">
-            <div class="icon-center">
-              <div class="icon">
-                <i class="fa-solid fa-star icon-cell"></i>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Return Guarantee</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--! content inner shake end  -->
-
-    <!--! our-mission start  -->
-    <section id="our-mission">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="title">Our Mission</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          </p>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 mission-card">
-            <div class="content-mission">
-              <div class="icon">
-                <i class="fa-solid fa-book-open"></i>
-              </div>
-              <div class="content-text">
-                <h4>Best Bookstore</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, <br />
-                  consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a href=""
-                  >Learn More <i class="fa-solid fa-angles-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mission-card">
-            <div class="content-mission">
-              <div class="icon">
-                <i class="fa-solid fa-medal"></i>
-              </div>
-              <div class="content-text">
-                <h4>Trusted Seller</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, <br />
-                  consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a href=""
-                  >Learn More <i class="fa-solid fa-angles-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mission-card">
-            <div class="content-mission">
-              <div class="icon">
-                <i class="fa-solid fa-store"></i>
-              </div>
-              <div class="content-text">
-                <h4>Best Bookstore</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, <br />
-                  consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a href=""
-                  >Learn More <i class="fa-solid fa-angles-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--! our-mission end  -->
-
-    <!-- sale book section start -->
-    <section id="bookonasale">
-      <div class="container">
-        <!-- Swiper -->
-        <div class="swiper saleBookSwiper">
-
-          <div class="heading">
-            <h2>Books on Sale</h2>
-            <div class="swiper_compenents">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="sale_card">
-                <div class="imgbox">
-                  <img
-                    src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/994d4fa6f936ff999ebe7ddb54d3a78e-450x600.jpg"
-                    alt="">
-                </div>
-                <h5>Take Out Tango</h5>
-                <ul>
-                  <li>
-                    <a href="">Business, </a>
-                  </li>
-                  <li>
-                    <a href="">Sports</a>
-                  </li>
-                </ul>
-                <div class="rate-price">
-                  <div class="rate">
-                    <i class="fa-solid fa-star"></i>
-                    <span class="rating">5.00</span>
+                      <h6>Web Design</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>UI/UX</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>HTML/CSS</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>SEO Marketing</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>Business Analysis</h6>
+                    </li>
+                  </ul>
+                  <div class="btn">
+                    <a href="">Start Now</a>
+                    <i class="fa-solid fa-angle-right"></i>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="topcard">
+                  <h3>Standart Plan</h3>
                   <div class="price">
-                    <del>$50.00</del>
-                    <span class="pricing">$40.00</span>
+                    <h4>$199</h4>
+                    <span>/Month</span>
+                  </div>
+                  <p>Aliquam diu lacus, labortis quis sapien non.</p>
+                </div>
+                <div class="bottomcard">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>Graphic Design</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>Web Design</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>UI/UX</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>HTML/CSS</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>SEO Marketing</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>Business Analysis</h6>
+                    </li>
+                  </ul>
+                  <div class="btn">
+                    <a href="">Start Now</a>
+                    <i class="fa-solid fa-angle-right"></i>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="sale_card">
-                <div class="imgbox">
-                  <img
-                    src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/b01e854ce12519d3d7bac72bd7bf8e0f-450x600.jpg"
-                    alt="">
-                </div>
-                <h5>Battle Drive</h5>
-                <ul>
-                  <li>
-                    <a href="">Drama, </a>
-                  </li>
-                  <li>
-                    <a href="">Sports</a>
-                  </li>
-                </ul>
-                <div class="rate-price">
-                  <div class="rate">
-                    <i class="fa-solid fa-star"></i>
-                    <span class="rating">4.00</span>
-                  </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="topcard">
+                  <h3>Premium Plan</h3>
                   <div class="price">
-                    <del>$25.00</del>
-                    <span class="pricing">$20.00</span>
+                    <h4>$149</h4>
+                    <span>/Month</span>
                   </div>
+                  <p>Aliquam diu lacus, labortis quis sapien non.</p>
                 </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sale_card">
-                <div class="imgbox">
-                  <img
-                    src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cfe08fd2dbb10fcea101b0547247280e-450x600.jpg"
-                    alt="">
-                </div>
-                <h5>Missadventure</h5>
-                <ul>
-                  <li>
-                    <a href="">Business, </a>
-                  </li>
-                  <li>
-                    <a href="">Sports</a>
-                  </li>
-                </ul>
-                <div class="rate-price">
-                  <div class="rate">
-                    <i class="fa-solid fa-star"></i>
-                    <span class="rating">4.00</span>
-                  </div>
-                  <div class="price">
-                    <del>$25.00</del>
-                    <span class="pricing">$18.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sale_card">
-                <div class="imgbox">
-                  <img
-                    src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/a7cbc9ec4f61f7713101612a45211ebb-450x600.jpg"
-                    alt="">
-                </div>
-                <h5>Terrible Madness</h5>
-                <ul>
-                  <li>
-                    <a href="">Business, </a>
-                  </li>
-                  <li>
-                    <a href="">Strategy</a>
-                  </li>
-                </ul>
-                <div class="rate-price">
-                  <div class="rate">
-                    <i class="fa-solid fa-star"></i>
-                    <span class="rating">5.00</span>
-                  </div>
-                  <div class="price">
-                    <span class="pricing">$50.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sale_card">
-                <div class="imgbox">
-                  <img
-                    src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/e5927e87ecbec52ddfbc4a24d3eb056e-450x600.jpg"
-                    alt="">
-                </div>
-                <h5>Pushing Clouds</h5>
-                <ul>
-                  <li>
-                    <a href="">Drana, </a>
-                  </li>
-                  <li>
-                    <a href="">Strategy</a>
-                  </li>
-                </ul>
-                <div class="rate-price">
-                  <div class="rate">
-                    <i class="fa-solid fa-star"></i>
-                    <span class="rating">5.00</span>
-                  </div>
-                  <div class="price">
-                    <del>$50.00</del>
-                    <span class="pricing">$30.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sale_card">
-                <div class="imgbox">
-                  <img src="https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png" alt="">
-                </div>
-                <h5>Think</h5>
-                <ul>
-                  <li>
-                    <a href="">Sports, </a>
-                  </li>
-                  <li>
-                    <a href="">Strategy</a>
-                  </li>
-                </ul>
-                <div class="rate-price">
-                  <div class="rate">
-                    <i class="fa-solid fa-star"></i>
-                    <span class="rating">4.00</span>
-                  </div>
-                  <div class="price">
-                    <del>$25.00</del>
-                    <span class="pricing">$10.00</span>
+                <div class="bottomcard">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>Graphic Design</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>Web Design</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>UI/UX</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>HTML/CSS</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>SEO Marketing</h6>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <h6>Business Analysis</h6>
+                    </li>
+                  </ul>
+                  <div class="btn">
+                    <a href="">Start Now</a>
+                    <i class="fa-solid fa-angle-right"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- sale book section end-->
+      </section>
+      <!--section pricing end-->
 
-    <!--section pricing start-->
-    <section id="pricing">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 d-flex justify-content-center">
-            <div class="textbox">
-              <h2>Our Pricing</h2>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card">
-              <div class="topcard">
-                <h3>Basic Plan</h3>
-                <div class="price">
-                  <h4>$99</h4>
-                  <span>/Month</span>
-                </div>
-                <p>Aliquam diu lacus, labortis quis sapien non.</p>
-              </div>
-              <div class="bottomcard">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Graphic Design</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Web Design</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6> UI/UX</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>HTML/CSS</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>SEO Marketing</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6> Business Analysis </h6>
-                  </li>
-                </ul>
-                <div class="btn">
-                  <a href="">Start Now</a>
-                  <i class="fa-solid fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card">
-              <div class="topcard">
-                <h3>Standart Plan</h3>
-                <div class="price">
-                  <h4>$199</h4>
-                  <span>/Month</span>
-                </div>
-                <p>Aliquam diu lacus, labortis quis sapien non.</p>
-              </div>
-              <div class="bottomcard">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Graphic Design</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Web Design</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>UI/UX</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>HTML/CSS</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>SEO Marketing</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Business Analysis</h6>
-                  </li>
-                </ul>
-                <div class="btn">
-                  <a href="">Start Now</a>
-                  <i class="fa-solid fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card">
-              <div class="topcard">
-                <h3>Premium Plan</h3>
-                <div class="price">
-                  <h4>$149</h4>
-                  <span>/Month</span>
-                </div>
-                <p>Aliquam diu lacus, labortis quis sapien non.</p>
-              </div>
-              <div class="bottomcard">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Graphic Design</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Web Design</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>UI/UX</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>HTML/CSS</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>SEO Marketing</h6>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <h6>Business Analysis</h6>
-                  </li>
-                </ul>
-                <div class="btn">
-                  <a href="">Start Now</a>
-                  <i class="fa-solid fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> 
-    <!--section pricing end-->
 
-    
-  <!-- what customers said section start   -->
-  <section id="customers">
-    <div class="container">
-      <div class="testimonial">
-        <div class="section-head">
-          <h2 class="title">What Customer's Said</h2>
-          <p class="testimonial-text">
-            There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration which don't look even
-            slightly believable.
-          </p>
-        </div>
-      </div>
-      <div class="customers-swiper-section">
+
+
       
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper customersSay">
+      <!--!! counter section start -->
+      <section id="counter">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="counter_items">
+                <div class="counter_icon">
+                  <i class="fa-solid fa-users"></i>
+                  <div class="counter_spin"></div>
+                </div>
 
-           
+                <div class="counter_content">
+                  <h2 class="counter_count" data="88">320</h2>
+                  <p class="counter_text">Happy Customers</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="counter_items">
+                <div class="counter_icon">
+                  <i class="fa-solid fa-book"></i>
+                  <div class="counter_spin"></div>
+                </div>
+
+                <div class="counter_content">
+                  <h2 class="counter_count" data="76">106</h2>
+                  <p class="counter_text">Book Collections</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="counter_items">
+                <div class="counter_icon">
+                  <i class="fa-solid fa-store"></i>
+                  <div class="counter_spin"></div>
+                </div>
+
+                <div class="counter_content">
+                  <h2 class="counter_count" data="100">193</h2>
+                  <p class="counter_text">Our Stores</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="counter_items">
+                <div class="counter_icon">
+                  <div class="counter_spin"></div>
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <div class="counter_content">
+                  <h2 class="counter_count" data="150">158</h2>
+                  <p class="counter_text">Famous Writers</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      
-    </div>
-  </section>
-  <!-- what customers said section end  -->
+      </section>
+      <!--!! counter section end -->
 
-  <!-- special offers section start  -->
-  <section id="special-offers">
-    <div class="container">
-      <div class="special-head">
-        <h2>Special Offers</h2>
-      </div>
-      <div class="swiper specialSwiper ">
-        <div class="swiper-wrapper specialCartContainer">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- special offers section end  -->
-
-<!-- paralax email section start -->
-<section id="paralax-section">
-  
-  <div class="background-paralax">
-
-    <div class="container">
-    <div class="content row">
-      <div class="title-paralax col-12 col-md-12 col-lg-6">
-        <h2>
-      Subscribe our newsletter for newest books updates
-    </h2>
-  </div>
-    <div class="form-col col-12 col-md-12 col-lg-6">
-    <div class="email-form ">
-        <input  type="email" placeholder="Enter Your Email Address...">
-        <div class="btn-sub"><a href="">SUBSCRIBE</a></div>
-        <div class="btn-tele"><i class="fa-brands fa-telegram"></i></div>
-        
-
-    </div></div>
-  </div>
-
-  </div>
-  </div>
-</section>
-<!-- paralax email section end -->
-
-  </main>
-  <!--! main end -->
-
-
-
-  <!--! footer start  -->
-  <footer>
-    <!--! footer category start  -->
-    <div id="footer-category">
-      <div class="container">
-        <div class="category-toogle">
-          <div class="btn-footer-collapse">
-            <a href="">Books categories</a>
+      <!-- paralax email section start -->
+      <section id="paralax-section">
+        <div class="background-paralax">
+          <div class="container">
+            <div class="content row">
+              <div class="title-paralax col-12 col-md-12 col-lg-6">
+                <h2>Subscribe our newsletter for newest books updates</h2>
+              </div>
+              <div class="form-col col-12 col-md-12 col-lg-6">
+                <div class="email-form">
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email Address..."
+                  />
+                  <div class="btn-sub"><a href="">SUBSCRIBE</a></div>
+                  <div class="btn-tele">
+                    <i class="fa-brands fa-telegram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+      <!-- paralax email section end -->
+    </main>
+    <!--! main end -->
 
-          <div class="category-accordion">
-            <div class="row">
-              <ul class="col-6  col-lg-3">
-                <li><a href="">Action</a></li>
-                <li><a href=""> Body,Mind & Spirit</a></li>
-                <li><a href="">Children Non-Fiction</a></li>
-                <li><a href="">Design</a></li>
-                <li><a href="">Fiction</a></li>
-                <li><a href="">Health & Fitness</a></li>
-                <li><a href="">Humor</a></li>
-                <li><a href="">Nature</a></li>
-                <li><a href="">Sports</a></li>
-              </ul>
-              <ul class="col-6 col-lg-3">
-                <li><a href="">Architecture</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">Comics & Graphics</a></li>
-                <li><a href="">Drama</a></li>
-                <li><a href="">Foreign Language</a></li>
-                <li><a href="">History</a></li>
-                <li><a href="">Literally Collections</a></li>
-                <li><a href="">Performing Arts</a></li>
-                <li><a href="">Strategy</a></li>
-              </ul>
-              <ul class="col-6 col-lg-3">
-                <li><a href="">Art</a></li>
-                <li><a href="">Business & Economics</a></li>
-                <li><a href="">Cooking</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Horror</a></li>
-                <li><a href="">Mathematics</a></li>
-                <li><a href="">Pets</a></li>
-                <li><a href="">Thriller</a></li>
-              </ul>
-              <ul class="col-6 col-lg-3">
-                <li><a href="">Biography</a></li>
-                <li><a href="">Children Fiction</a></li>
-                <li><a href="">Grafts & Hobbies</a></li>
-                <li><a href="">Family and Relationships</a></li>
-                <li><a href="">Gardening</a></li>
-                <li><a href="">House & Home</a></li>
-                <li><a href="">Medical</a></li>
-                <li><a href="">Show others</a></li>
-                <li><a href="">Uncategorized</a></li>
-              </ul>
+    <!--! footer start  -->
+    <footer>
+      <!--! footer category start  -->
+      <div id="footer-category">
+        <div class="container">
+          <div class="category-toogle">
+            <div class="btn-footer-collapse">
+              <a href="">Books categories</a>
+            </div>
+
+            <div class="category-accordion">
+              <div class="row">
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Action</a></li>
+                  <li><a href=""> Body,Mind & Spirit</a></li>
+                  <li><a href="">Children Non-Fiction</a></li>
+                  <li><a href="">Design</a></li>
+                  <li><a href="">Fiction</a></li>
+                  <li><a href="">Health & Fitness</a></li>
+                  <li><a href="">Humor</a></li>
+                  <li><a href="">Nature</a></li>
+                  <li><a href="">Sports</a></li>
+                </ul>
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Architecture</a></li>
+                  <li><a href="">Business</a></li>
+                  <li><a href="">Comics & Graphics</a></li>
+                  <li><a href="">Drama</a></li>
+                  <li><a href="">Foreign Language</a></li>
+                  <li><a href="">History</a></li>
+                  <li><a href="">Literally Collections</a></li>
+                  <li><a href="">Performing Arts</a></li>
+                  <li><a href="">Strategy</a></li>
+                </ul>
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Art</a></li>
+                  <li><a href="">Business & Economics</a></li>
+                  <li><a href="">Cooking</a></li>
+                  <li><a href="">Education</a></li>
+                  <li><a href="">Games</a></li>
+                  <li><a href="">Horror</a></li>
+                  <li><a href="">Mathematics</a></li>
+                  <li><a href="">Pets</a></li>
+                  <li><a href="">Thriller</a></li>
+                </ul>
+                <ul class="col-6 col-lg-3">
+                  <li><a href="">Biography</a></li>
+                  <li><a href="">Children Fiction</a></li>
+                  <li><a href="">Grafts & Hobbies</a></li>
+                  <li><a href="">Family and Relationships</a></li>
+                  <li><a href="">Gardening</a></li>
+                  <li><a href="">House & Home</a></li>
+                  <li><a href="">Medical</a></li>
+                  <li><a href="">Show others</a></li>
+                  <li><a href="">Uncategorized</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--! footer category end  -->
+      <!--! footer category end  -->
 
-    <!--! footer top start  -->
-    <div id="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="booksore-icons col-12 col-md-12 col-lg-3">
-            <div class="img-logo">
-              <img
-                src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-white.png"
-                alt=""
-              />
+      <!--! footer top start  -->
+      <div id="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="booksore-icons col-12 col-md-12 col-lg-3">
+              <div class="img-logo">
+                <img
+                  src="https://bookland.wprdx.com/demo/wp-content/themes/bookland/assets/images/logo-white.png"
+                  alt=""
+                />
+              </div>
+              <p class="text">
+                Bookland is a Book Store Ecommerce Website Template by
+                DexignZone lorem ipsum dolor sit
+              </p>
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <p class="text">
-              Bookland is a Book Store Ecommerce Website Template by
-              DexignZone lorem ipsum dolor sit
-            </p>
-            <div class="social-media">
+            <div class="links col-4 col-md-3 col-lg-2">
+              <h5>Our Links</h5>
               <ul>
                 <li>
-                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <i class="fa-solid fa-angle-right"></i><a href="">About Us</a>
                 </li>
                 <li>
-                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Contact Us</a>
                 </li>
                 <li>
-                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Pricing</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Faq's</a>
+                </li>
+              </ul>
+            </div>
+            <div class="links col-4 col-md-3 col-lg-2">
+              <h5>Bookland</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Shop</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Checkout</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Cart</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Wishlist</a>
+                </li>
+              </ul>
+            </div>
+            <div class="links col-4 col-md-3 col-lg-2">
+              <h5>Resources</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Home</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i><a href="">Features</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Blog Grid</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">Help Desk</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angle-right"></i
+                  ><a href="">My Account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts col-12 col-md-12 col-lg-3">
+              <h5>Get in Touch With Us</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>832 Thompson Drive, San Fransisco CA 94107,US</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+123 345123 556 <br />+123 345123 556</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>support@bookland.id <br />info@bookland.id</p>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="links col-4 col-md-3 col-lg-2">
-            <h5>Our Links</h5>
-            <ul>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">About Us</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i
-                ><a href="">Contact Us</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i
-                ><a href="">Privacy Policy</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Pricing</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Faq's</a>
-              </li>
-            </ul>
-          </div>
-          <div class="links col-4 col-md-3 col-lg-2">
-            <h5>Bookland</h5>
-            <ul>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Blog</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Shop</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Checkout</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Cart</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Wishlist</a>
-              </li>
-            </ul>
-          </div>
-          <div class="links col-4 col-md-3 col-lg-2">
-            <h5>Resources</h5>
-            <ul>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Home</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i><a href="">Features</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i
-                ><a href="">Blog Grid</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i
-                ><a href="">Help Desk</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-angle-right"></i
-                ><a href="">My Account</a>
-              </li>
-            </ul>
-          </div>
-          <div class="contacts col-12 col-md-12 col-lg-3">
-            <h5>Get in Touch With Us</h5>
-            <ul>
-              <li>
-                <i class="fa-solid fa-location-dot"></i>
-                <p>832 Thompson Drive, San Fransisco CA 94107,US</p>
-              </li>
-              <li>
-                <i class="fa-solid fa-phone"></i>
-                <p>+123 345123 556 <br />+123 345123 556</p>
-              </li>
-              <li>
-                <i class="fa-regular fa-envelope"></i>
-                <p>support@bookland.id <br />info@bookland.id</p>
-              </li>
-            </ul>
+        </div>
+      </div>
+      <!--! footer top end  -->
+      <!--! footer bottom start  -->
+      <div id="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="text-start col-lg-6 col-md-12">
+              <p class="copyright-text">
+                Bookland Book Store Ecommerce Website - © 2022 All Rights
+                Reserved
+              </p>
+            </div>
+            <div class="text-end col-lg-6 col-md-12">
+              <p class="copyright-text-end">
+                Made with <i class="fa-solid fa-heart"></i> by
+                <a href="">DexignZone</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--! footer top end  -->
-    <!--! footer bottom start  -->
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="text-start col-lg-6 col-md-12">
-            <p class="copyright-text">
-              Bookland Book Store Ecommerce Website - © 2022 All Rights
-              Reserved
-            </p>
-          </div>
-          <div class="text-end col-lg-6 col-md-12">
-            <p class="copyright-text-end">
-              Made with <i class="fa-solid fa-heart"></i> by
-              <a href="">DexignZone</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--! footer bottom end  -->
-  </footer>
-  <!--! footer end  -->
+      <!--! footer bottom end  -->
+    </footer>
+    <!--! footer end  -->
 
-
-
-  <!--! js links -->
-  <!--! swiper link -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!--! axios link -->
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <!--! app js -->
-  <script src="./assets/js/app.js"></script>
-  <script src="./assets/js/main.js"></script>
-  <!--! swiper js -->
-  <script src="./assets/js/swiper.js"></script>
-  <!--! counter js -->
-  <script src="./assets/js/counter.js"></script>
-  <!--! book js -->
-  <script src="./assets/js/books.js"></script>
-  <!-- <script src="./assets/js/products.js"></script> -->
-  <script src="./assets/js/costumers.js"></script>
-  <!--! footer collapse link  -->
-  <script src="./assets/js/footer.js"></script>
-</body>
+    <!--! js links -->
+    <!--! swiper link -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--! axios link -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--! app js -->
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!--! swiper js -->
+    <script src="./assets/js/swiper.js"></script>
+    <!--! counter js -->
+    <script src="./assets/js/counter.js"></script>
+    <!--! book js -->
+    <script src="./assets/js/books.js"></script>
+    <!-- <script src="./assets/js/products.js"></script> -->
+    <script src="./assets/js/costumers.js"></script>
+    <!--! footer collapse link  -->
+    <script src="./assets/js/footer.js"></script>
+  </body>
 </html>
