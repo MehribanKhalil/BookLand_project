@@ -296,39 +296,3 @@ var swiper = new Swiper(".saleBookSwiper", {
 });
 //  bookonland swiper end
 
-
-
-//deatils buttons
-const descriptionBtn = document.querySelector(".description")
-const reviewsBtn = document.querySelector(".reviews")
-
-const descriptionSection = document.getElementById("description")
-const reviewsSection = document.getElementById("reviews")
-
-const descriptionBefore = document.querySelector(".description::before")
-const reviewsBefore = document.querySelector(".reviews::before")
-
-
-descriptionBtn.addEventListener("click",function (p) {
-    p.preventDefault()
-    descriptionSection.classList.add("active")
-    reviewsSection.classList.add("deactive")
-
-    descriptionBefore.classList.add("width")
-    
-    if (reviewsBefore.classList.contains("width")) {
-        reviewsBefore.classList.remove("width")
-    }
-
-})
-reviewsBtn.addEventListener("click",function (p) {
-    p.preventDefault()
-    descriptionSection.classList.remove("active")
-    reviewsSection.classList.remove("deactive")
-
-    reviewsBefore.classList.add("width")
-
-    if (descriptionBefore.classList.contains("width")) {
-        descriptionBefore.classList.remove("width")
-    }
-})
