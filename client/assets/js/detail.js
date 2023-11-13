@@ -1,5 +1,7 @@
 let detailCardContainer = document.querySelector(".detail_container");
 
+
+
 //fetch data Recommended Books
 async function getRecommendedBooks() {
   try {
@@ -11,6 +13,9 @@ async function getRecommendedBooks() {
     console.log("Error: ", error);
   }
 }
+ 
+
+
 
 function showDetail(detailProducts) {
   let detailCardContainer = document.querySelector(".detail_container");
@@ -47,6 +52,7 @@ function showDetail(detailProducts) {
       "$" + thisProduct.price;
   }
 }
+
 
 //FIND DISCOUNTED PRICE
 function findDiscountedPrice(price, discount) {

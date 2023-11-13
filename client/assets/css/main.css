@@ -1220,23 +1220,26 @@ header .menu .modalactive {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px dotted #9290b0;
-  padding: 10px 5px;
+  padding: 10px 20px;
 }
 .basket_card .basket_card_content .card_img {
-  width: 60px;
+  width: 70px;
   height: 80px;
 }
 .basket_card .basket_card_content .card_img img {
   height: 100%;
   width: 100%;
+  border-radius: 6px;
 }
 .basket_card .basket_card_content .basket_book_info {
+  width: 140px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 .basket_card .basket_card_content .basket_book_info h5 {
   margin-bottom: 0;
+  font-size: 1.1rem;
 }
 .basket_card .basket_card_content .basket_book_info button {
   outline: none;
@@ -1249,6 +1252,13 @@ header .menu .modalactive {
   justify-content: center;
   align-items: center;
   margin: 0 7px;
+}
+.basket_card .basket_card_content .basket_book_info .cart_item_price {
+  color: #e5588d;
+  font-weight: 600;
+}
+.basket_card .basket_card_content .remove_item {
+  width: 30px;
 }
 .basket_card .basket_card_content .remove_item i {
   font-size: 1.3rem;
@@ -1291,14 +1301,16 @@ header .menu .modalactive {
   max-height: 500px;
   margin-top: 30px;
   transition: all 0.9s ease;
+  width: 100%;
+  display: block;
 }
-#footer-category .category-toogle .category-accordion li {
+#footer-category .category-toogle .category-accordion li:not(:last-child) {
   padding-bottom: 15px;
 }
-#footer-category .category-toogle .category-accordion li a {
+#footer-category .category-toogle .category-accordion li:not(:last-child) a {
   transition: all 0.7s;
 }
-#footer-category .category-toogle .category-accordion li a:hover {
+#footer-category .category-toogle .category-accordion li:not(:last-child) a:hover {
   color: black;
   transition: all 0.7s;
 }

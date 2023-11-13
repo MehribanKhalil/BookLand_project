@@ -139,7 +139,8 @@
       "janr": "horror",
       "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
       "price":50,
-      "discount":50
+      "discount":50,
+      "rating":3
     },
     {
       "id": 13,
@@ -148,7 +149,8 @@
       "janr": "Drama",
       "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
       "price":30,
-      "discount":20
+      "discount":20,
+      "rating":5
     },
     {
       "id": 14,
@@ -157,15 +159,37 @@
       "janr": "Business",
       "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
       "price":18,
-      "discount":10
+      "discount":10,
+      "rating":2
     },
     {
       "id": 15,
       "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/a7cbc9ec4f61f7713101612a45211ebb-450x600.jpg",
-      "janr": "Terrible Madness",
+      "title": "Terrible Madness",
+      "janr": "crime",
       "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
       "price":18,
-      "discount":30
+      "discount":30,
+      "rating":4
+    }, {
+      "id": 16,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/e5927e87ecbec52ddfbc4a24d3eb056e-450x600.jpg",
+      "title": "Pushing Clouds",
+      "janr": "Drama",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":50,
+      "discount":20,
+      "rating":5
+    },
+    {
+      "id": 17,
+      "image":"https://bookland.wprdx.com/demo/wp-content/uploads/2022/09/cover-450x600.png",
+      "title":"Think",
+      "janr": " Business",
+      "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
+      "price":25,
+      "discount":15,
+      "rating":4
     }
 
   ],

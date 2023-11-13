@@ -28,10 +28,12 @@
         max-height: 500px;
         margin-top: 30px;
         transition: all 0.9s ease;
+        width: 100%;
+        display: block;
        }
       
   
-        li {
+        li:not(:last-child) {
           padding-bottom: 15px;
           a {
             transition: all 0.7s;
@@ -71,6 +73,7 @@
         margin-top: 30px;
         ul {
           display: flex;
+          // align-items: space-between;
           flex-direction: row;
           gap: 10px;
           li {
@@ -125,6 +128,7 @@
       ul {
         li {
           display: flex;
+          // justify-content: space-between;
           align-items: center;
           padding-bottom: 20px;
           i {
