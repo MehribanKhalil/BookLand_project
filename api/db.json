@@ -168,8 +168,8 @@
       "title": "Terrible Madness",
       "janr": "crime",
       "description":"Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut fugit, sed quia consequuntur..",
-      "price":18,
-      "discount":30,
+      "price":30,
+      "discount":10,
       "rating":4
     }, {
       "id": 16,
