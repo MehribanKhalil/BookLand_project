@@ -177,17 +177,19 @@ function creatSpecialCards(id,imgageS,titleS,janrS,descriptionS,discountS,priceS
     const specialAddBtn=specialCard.querySelector(".specialAddBtn")
     specialAddBtn.addEventListener("click",(e)=>{
         e.preventDefault()
-        if (booksArr.find((item) => item.id === id)) {
-            return;
-          }
 
-          booksArr.push({
-            id: id,
-            image: imgageS,
-            title: titleS,
-            price: findDiscountedPrice(priceS,discountS),
-            bookCount:1
-          });
+        const existingBook = booksArr.find((item) => item.id ===id);
+        if (existingBook) {
+            existingBook.bookCount++;
+        } else {
+            booksArr.push({
+                id: id,
+                image: imgageS,
+                title: titleS,
+                price: findDiscountedPrice(priceS,discountS),
+                bookCount:1
+              });
+        }
 
           setLocalStorage("Books", booksArr);
           createCartElement()            
@@ -287,9 +289,10 @@ function createCartElement() {
                 e.preventDefault()
                 booksArr=booksArr.filter(x=>x.id !==item.id)
                 setLocalStorage('Books',booksArr)
-                createCartElement()
-                updateCartItemCount();
-                getSubtotal()
+                // createCartElement()
+                // updateCartItemCount();
+                // getSubtotal()
+                updateCartElements()
                 let lengthLocal = getLocalStorage("Books").length;
                 cartItemCount.textContent = lengthLocal;
             })
@@ -381,8 +384,13 @@ function getLocalStorage(key) {
   return JSON.parse(localStorage.getItem(key));
 }
 
+function updateCartElements() {
+    createCartElement();
+    updateCartItemCount();
+    getSubtotal();
+}
+
 getRecomendedBooks();
 getBookSpecial();
 getSaleBooks(); 
-updateCartItemCount()
-getSubtotal()
+updateCartElements()
